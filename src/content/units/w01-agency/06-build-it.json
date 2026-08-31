@@ -1,0 +1,67 @@
+{
+  "id": "w01-commitment",
+  "type": "commitment",
+  "scored": false,
+  "difficulty": "intro",
+  "prompt": {
+    "spicy": "One behaviour, thirty days. Not a goal — a Cue and a Behaviour, because \"try harder\" has a measured effect of roughly nothing and if–then plans don't.\n\nPick one of ours or write your own. Small enough that you'd do it on a bad day.",
+    "boardroom": "One behaviour, thirty days. Not a goal but a Cue and a Behaviour: general intention has minimal measured effect, whereas if–then planning does not.\n\nSelect one of the suggestions or write your own. It should be small enough to complete on a difficult day."
+  },
+  "payload": {
+    "kind": "commitment",
+    "suggestions": [
+      {
+        "cue": {
+          "spicy": "When I notice I've been stuck for 15 minutes",
+          "boardroom": "When I have been stuck for 15 minutes"
+        },
+        "behaviour": {
+          "spicy": "I write the one-sentence version of where I'm stuck before I ask anyone",
+          "boardroom": "I write a one-sentence statement of the blocker before escalating"
+        }
+      },
+      {
+        "cue": {
+          "spicy": "When a task feels vague and I want to close the tab",
+          "boardroom": "When a task feels unclear and I am inclined to defer it"
+        },
+        "behaviour": {
+          "spicy": "I do the smallest visible piece of it for ten minutes",
+          "boardroom": "I complete the smallest concrete part of it for ten minutes"
+        }
+      },
+      {
+        "cue": {
+          "spicy": "When I'm about to send \"any update on this?\"",
+          "boardroom": "When I am about to send a reminder containing no decision"
+        },
+        "behaviour": {
+          "spicy": "I add what I'll do by default if nobody replies",
+          "boardroom": "I add the action I will take by default if there is no response"
+        }
+      },
+      {
+        "cue": {
+          "spicy": "When someone says \"no rush\" about something I haven't started",
+          "boardroom": "When someone indicates there is no urgency on work I have not started"
+        },
+        "behaviour": {
+          "spicy": "I say the specific thing I'm stuck on, right then, in that conversation",
+          "boardroom": "I state the specific blocker in that conversation"
+        }
+      }
+    ]
+  },
+  "debrief": {
+    "verdict": {
+      "spicy": "In the tracker. Four check-ins over thirty days, then it ends. It genuinely ends — this isn't a streak and nothing breaks if you miss a Tuesday.",
+      "boardroom": "Recorded in the tracker with four check-ins across thirty days, after which it concludes. Missed days do not reset anything."
+    },
+    "principle": {
+      "spicy": "Cue → Behaviour. The cue is the part people leave out, and it's the part that works.",
+      "boardroom": "Cue then Behaviour. The cue is the component most often omitted and the one that produces the effect."
+    }
+  },
+  "tags": ["commitment"],
+  "reviewed_by": null
+}

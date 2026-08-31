@@ -1,0 +1,73 @@
+{
+  "id": "w01-cold-open",
+  "type": "cold_open",
+  "scored": true,
+  "difficulty": "intro",
+  "competency_weights": { "AGY": 0.7, "RES": 0.3 },
+  "prompt": {
+    "spicy": "No teaching yet. Just answer honestly — we're going to show you this again at the end.\n\nIt's 9:40am on your third week. A task landed last night with the message \"can you take this one\". You do not understand what is being asked. The person who sent it is off today. Nobody else has mentioned it.\n\nWhat do you actually do?",
+    "boardroom": "Nothing has been taught yet. Answer honestly — this will be shown back to you at the end of the unit.\n\nIt is 9:40am in your third week. A task arrived last night with the message \"can you take this one\". You do not understand what is being asked. The sender is out of office today and nobody else has referenced it.\n\nWhat do you actually do?"
+  },
+  "options": [
+    {
+      "id": "a",
+      "quality": 1,
+      "label": {
+        "spicy": "Spend 20 minutes finding a previous version of this task, attempt the first step, then message them one specific question",
+        "boardroom": "Spend 20 minutes locating a previous example, attempt the first step, then send one specific question"
+      },
+      "consequence": {
+        "spicy": "You arrive at tomorrow with progress and a precise question. That combination is more or less unarguable.",
+        "boardroom": "You arrive at the following day with progress and a precise question — a strong position."
+      }
+    },
+    {
+      "id": "b",
+      "quality": 0.6,
+      "label": {
+        "spicy": "Ask the team channel if anyone knows what this is",
+        "boardroom": "Ask the team channel whether anyone can clarify it"
+      },
+      "consequence": {
+        "spicy": "Often works. Costs you nothing except the version of this where you found it yourself in nine minutes.",
+        "boardroom": "Frequently effective, though it forgoes the possibility of resolving it independently."
+      }
+    },
+    {
+      "id": "c",
+      "quality": 0.3,
+      "label": {
+        "spicy": "Reply \"sure, will pick this up\" and wait for them to be back to explain it",
+        "boardroom": "Acknowledge it and wait for their return to clarify"
+      },
+      "consequence": {
+        "spicy": "You've now confirmed you're on it and done none of it. A day of that is survivable. A habit of it is a reputation.",
+        "boardroom": "You have confirmed ownership without progress. Occasional is manageable; habitual becomes a reputation."
+      }
+    },
+    {
+      "id": "d",
+      "quality": 0.1,
+      "label": {
+        "spicy": "Work on something else and hope it clarifies itself",
+        "boardroom": "Focus elsewhere and wait for it to become clearer"
+      },
+      "consequence": {
+        "spicy": "It does not clarify itself. It gains a day of age and becomes slightly harder to ask about.",
+        "boardroom": "It will not clarify itself, and becomes progressively harder to raise."
+      }
+    }
+  ],
+  "debrief": {
+    "verdict": {
+      "spicy": "Nothing to score yet. XP is for answering honestly, not for being right — we'll come back to this.",
+      "boardroom": "No assessment yet. Credit is awarded for answering, not for being correct. This will be revisited."
+    },
+    "principle": {
+      "spicy": "Remember what you picked. You'll have opinions about it in forty minutes.",
+      "boardroom": "Note your answer. You are likely to view it differently by the end of the unit."
+    }
+  },
+  "tags": ["cold-open", "agency"],
+  "reviewed_by": null
+}

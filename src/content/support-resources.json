@@ -1,0 +1,45 @@
+{
+  "note": "§7.5.4 Routed to from the Capacity unit and the Troubleshoot escape hatch. Keyed by the account's country. Never scored, never sent to an employer. Verify every entry before launch — see docs/OPEN-DECISIONS.md, item 6.",
+  "default_country": "GB",
+  "countries": {
+    "GB": {
+      "label": "United Kingdom",
+      "resources": [
+        {
+          "name": "NHS 111",
+          "what": "Urgent but non-emergency medical help, including mental health. 24 hours.",
+          "contact": "111",
+          "url": "https://111.nhs.uk"
+        },
+        {
+          "name": "Samaritans",
+          "what": "Free, 24-hour listening line. You do not have to be in crisis to call.",
+          "contact": "116 123",
+          "url": "https://www.samaritans.org"
+        },
+        {
+          "name": "Shout",
+          "what": "Free 24/7 text support if you would rather not speak to anyone.",
+          "contact": "Text SHOUT to 85258",
+          "url": "https://giveusashout.org"
+        },
+        {
+          "name": "Your GP",
+          "what": "For functioning that has dropped and stayed dropped. This is the one people skip.",
+          "contact": "Book an appointment",
+          "url": "https://www.nhs.uk/service-search/find-a-gp"
+        },
+        {
+          "name": "Acas",
+          "what": "Free, impartial advice on workplace rights, including reasonable adjustments.",
+          "contact": "0300 123 1100",
+          "url": "https://www.acas.org.uk"
+        }
+      ],
+      "emergency": {
+        "what": "If you or someone else is in immediate danger.",
+        "contact": "999"
+      }
+    }
+  }
+}

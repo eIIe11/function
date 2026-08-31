@@ -1,0 +1,128 @@
+@import "/fonts/fonts.css";
+@import "./tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    /* iOS: stop the address bar collapse from breaking 100vh layouts. */
+    height: 100%;
+  }
+
+  body {
+    @apply bg-paper text-ink font-body;
+    font-size: var(--t-md);
+    line-height: 1.55;
+    margin: 0;
+    min-height: 100%;
+    overscroll-behavior-y: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* One grain texture, used consistently, at 4%. LOUD surfaces opt in via
+     .grain — never applied globally inside a unit. */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image: var(--grain-url);
+    background-size: 180px 180px;
+    mix-blend-mode: multiply;
+  }
+
+  *:focus-visible {
+    outline: 3px solid var(--violet);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Kill the iOS tap flash; we handle press states ourselves. */
+  button,
+  a,
+  [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  ::selection {
+    background: var(--acid);
+    color: var(--ink);
+  }
+}
+
+@layer components {
+  /* QUIET: hairline surfaces. The only full-strength ink border in the
+     product is on the option the learner actually chose. */
+  .q-card {
+    @apply rounded-card border border-line bg-paper;
+  }
+
+  .q-recessed {
+    @apply rounded-card bg-paper-2;
+  }
+
+  .q-chosen {
+    border-color: var(--ink) !important;
+  }
+
+  /* LOUD: 3px ink borders and solid offset shadows. */
+  .loud-card {
+    @apply rounded-card bg-paper shadow-loud;
+    border: 3px solid var(--ink);
+  }
+
+  .hairline {
+    @apply border-t border-line;
+  }
+
+  .label {
+    @apply font-mono text-xs uppercase tracking-[0.12em] text-muted;
+  }
+
+  /* Type-as-timing: big setup line, tiny punchline underneath. LOUD only.
+     Baloo 2 stops at 800; the hairline text-stroke fattens it the last step
+     without needing a second font file, matching the generated mark. */
+  .setup {
+    @apply font-display uppercase leading-[0.86] tracking-[-0.02em];
+    font-weight: 800;
+    -webkit-text-stroke: 0.012em currentColor;
+  }
+
+  /* The ampersand device: two layers, magenta offset behind ink, solid never
+     blur. It means Workplace & Yourself — the two doors into one brand. */
+  .amp {
+    @apply relative inline-block font-amp;
+    font-weight: 900;
+    line-height: 0.8;
+  }
+
+  .amp::before {
+    content: "&";
+    position: absolute;
+    left: 0.055em;
+    top: 0.055em;
+    color: var(--magenta);
+    z-index: -1;
+  }
+
+  .punchline {
+    @apply font-body text-sm text-muted;
+    max-width: 42ch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.12s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.12s !important;
+    scroll-behavior: auto !important;
+  }
+}

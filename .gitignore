@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dist-ssr/
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+.vite/
+coverage/
+
+# public/fonts is committed on purpose: 252 KB of subsetted woff2 that the build
+# and the deploy both need, versus a network fetch in CI that can fail.

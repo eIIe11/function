@@ -1,0 +1,116 @@
+{
+  "id": "w01-agency",
+  "side": "both",
+  "number": 1,
+  "title": {
+    "spicy": "Nobody Is Coming to Save You",
+    "boardroom": "Nobody Is Coming to Save You"
+  },
+  "subtitle": {
+    "spicy": "Agency: the difference between stuck and waiting.",
+    "boardroom": "Agency: moving from problem to action without waiting to be rescued."
+  },
+  "primary_competencies": ["AGY", "RES"],
+  "pathways": ["full", "emergency", "no-energy", "grad-intake", "first-90"],
+  "estimated_minutes": 42,
+  "idea": {
+    "heading": {
+      "spicy": "There is no adult coming.",
+      "boardroom": "There is no adult coming."
+    },
+    "blocks": [
+      {
+        "body": {
+          "spicy": "For about eighteen years, someone told you what to do next. School had a timetable. Assignments had deadlines set by other people. Somebody marked your work and told you whether it was fine.\n\nThen you got a job, and the timetable stopped arriving.",
+          "boardroom": "For most of your education, the next step was defined for you. Timetables, deadlines and standards were all set externally, and someone else assessed whether the work was acceptable.\n\nIn employment, that structure largely disappears."
+        }
+      },
+      {
+        "heading": {
+          "spicy": "Stuck and waiting look identical from the inside",
+          "boardroom": "Being stuck and waiting are hard to tell apart"
+        },
+        "body": {
+          "spicy": "This is the whole unit, so read it twice.\n\nWhen you don't know what to do next, it feels like you're blocked. Blocked is passive — it's something being done to you. And when you're blocked, waiting feels reasonable. Responsible, even.\n\nBut most of the time you aren't blocked. You're in an unfamiliar situation with no instructions, which is a completely different problem with a completely different fix. Blocked means someone else must move first. Unfamiliar means you must move first.",
+          "boardroom": "This distinction is the core of the unit.\n\nWhen the next step is unclear, it presents as being blocked. Blocked is passive: something is being done to you, and waiting therefore appears reasonable.\n\nIn most cases you are not blocked. You are in an unfamiliar situation without instructions, which is a different problem with a different solution. Blocked requires someone else to act first. Unfamiliar requires you to act first."
+        }
+      },
+      {
+        "heading": {
+          "spicy": "Agency is not confidence",
+          "boardroom": "Agency is not confidence"
+        },
+        "body": {
+          "spicy": "You do not need to feel capable. Feeling capable is the thing that arrives afterwards, annoyingly, once you've already done it a few times badly.\n\nAgency is the mechanical act of converting a vague bad feeling into a specific next action. That's it. It's a sentence-writing skill more than a personality trait.\n\n\"I can't do this\" → \"I don't know which template to use.\" One of those has a next step.",
+          "boardroom": "Confidence is not a prerequisite. Confidence generally follows competence, not the reverse.\n\nAgency is the mechanical conversion of a vague concern into a specific next action. It is closer to a writing skill than a personality trait.\n\n\"I cannot do this\" becomes \"I do not know which template to use.\" Only the second has an obvious next step."
+        }
+      },
+      {
+        "heading": {
+          "spicy": "The three-move rule",
+          "boardroom": "The three-move rule"
+        },
+        "body": {
+          "spicy": "Before you escalate anything, you owe it three moves. Not three hours. Three moves.\n\n1. Search the exact words of the problem — docs, chat history, then the internet.\n2. Look for the last person who did this and copy their version.\n3. Write down precisely where you're stuck, in one sentence.\n\nMove 3 solves it roughly a third of the time on its own, which is a genuinely irritating thing to discover. And if it doesn't, you've now got the best possible escalation: a specific question instead of \"can you help with this\".",
+          "boardroom": "Before escalating, complete three moves. Not three hours — three moves.\n\n1. Search the exact wording of the problem: documentation, message history, then external sources.\n2. Find the most recent example of the same work and use it as a model.\n3. Write down precisely where you are stuck, in one sentence.\n\nThe third move resolves the issue in a substantial minority of cases on its own. Where it does not, it produces a specific question rather than a general request for help — which is a materially better escalation."
+        }
+      },
+      {
+        "heading": {
+          "spicy": "What this unit is not saying",
+          "boardroom": "What this unit is not saying"
+        },
+        "body": {
+          "spicy": "It isn't saying never ask. Asking well is a skill and we teach it in unit 05. It isn't saying suffer quietly, and it isn't saying every problem is yours — some genuinely aren't, and handing those back is also agency.\n\nIt's saying: the default has to be motion. Even small motion. Even motion in a slightly wrong direction, which is usually recoverable and always more informative than a still, silent afternoon.",
+          "boardroom": "This is not an argument against asking. Asking well is a distinct skill covered in unit 05. Nor is it an argument for absorbing everything: some problems genuinely belong elsewhere, and returning them appropriately is also agency.\n\nThe principle is that the default should be action. Small action is sufficient. Imperfectly directed action is usually recoverable and is always more informative than inaction."
+        }
+      }
+    ]
+  },
+  "science": {
+    "heading": {
+      "spicy": "The evidence, briefly, with actual names",
+      "boardroom": "The evidence, in brief"
+    },
+    "findings": [
+      {
+        "effect": "Learned helplessness",
+        "body": {
+          "spicy": "Seligman and Maier found that animals given inescapable shocks stopped trying to escape later, even when escape became easy — they'd learned that action was pointless. Later work reframed it: the actual finding is that the *default* response to bad things is passivity, and what gets learned is control. Nobody has to teach you to freeze. You have to learn not to.",
+          "boardroom": "Seligman and Maier demonstrated that subjects exposed to uncontrollable adverse events ceased attempting to escape even once escape became available. Later reinterpretation is more useful: passivity is the default response to adversity, and it is control that has to be learned. Inaction requires no training; action does."
+        },
+        "citation": "Seligman & Maier (1967), J. Exp. Psychol.; Maier & Seligman (2016), Psychol. Rev."
+      },
+      {
+        "effect": "Self-efficacy precedes performance",
+        "body": {
+          "spicy": "Bandura's work found that belief in your ability to execute predicts performance and persistence — and, critically, that the strongest source of that belief is *mastery experience*: having actually done a small version of the thing. Not encouragement. Not a pep talk. Evidence.",
+          "boardroom": "Bandura established that belief in one's capacity to execute predicts both performance and persistence, and that the strongest determinant of that belief is mastery experience: having previously completed a smaller version of the task. Encouragement is a considerably weaker input than evidence."
+        },
+        "citation": "Bandura (1977), Psychol. Rev.; Bandura (1997), Self-Efficacy"
+      },
+      {
+        "effect": "Implementation intentions",
+        "body": {
+          "spicy": "Gollwitzer's meta-analysis across 94 studies found that if–then plans (\"if it's 9am and I'm stuck, then I write the one-sentence version\") produce a medium-to-large effect on actually doing the thing. Vague intent to \"try harder\" produces roughly nothing. This is why unit 06 makes you write a Cue → Behaviour and not a goal.",
+          "boardroom": "Gollwitzer's meta-analysis of 94 studies found if–then planning produces a medium-to-large effect on goal attainment, whereas general intention to improve produces little. This is why the commitment step requires a Cue → Behaviour rather than a goal."
+        },
+        "citation": "Gollwitzer & Sheeran (2006), Adv. Exp. Soc. Psychol."
+      },
+      {
+        "effect": "Avoidance is self-reinforcing",
+        "body": {
+          "spicy": "Avoiding something unpleasant produces immediate relief, and relief is a reward, so the brain files the thing as genuinely dangerous. Do it a few times and the task now feels worse than when you started. Nothing about the task changed. This is why the file you haven't opened for three days feels enormous.",
+          "boardroom": "Avoidance produces immediate relief, which functions as reinforcement, strengthening the association between the task and threat. Repeated avoidance therefore increases perceived difficulty without any change to the task itself."
+        },
+        "citation": "Mowrer (1960), two-factor theory; Krypotos et al. (2015), Front. Behav. Neurosci."
+      }
+    ]
+  },
+  "close": {
+    "principle": {
+      "spicy": "Stuck and waiting look identical from the inside. Only one of them requires someone else to move.",
+      "boardroom": "Being stuck and waiting are difficult to distinguish internally. Only one of them requires someone else to act first."
+    }
+  }
+}

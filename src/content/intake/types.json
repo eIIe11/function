@@ -1,0 +1,290 @@
+[
+  {
+    "code": "MADF",
+    "name": "The Bulldozer",
+    "diagnosis": {
+      "spicy": "Things get done. Some of them were load-bearing.",
+      "boardroom": "Things get done. Occasionally one of them was load-bearing."
+    },
+    "strength": {
+      "spicy": "You end stalemates. Rooms that have been circling for a week move when you arrive.",
+      "boardroom": "You break deadlocks. Situations that have stalled tend to move when you engage."
+    },
+    "watch_out": {
+      "spicy": "You find out what something was for by breaking it. Ask first. Once.",
+      "boardroom": "You often discover a thing's purpose by removing it. Ask once before acting."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "MADO",
+    "name": "The Fixer",
+    "diagnosis": {
+      "spicy": "You solve problems nobody asked you to solve. Rarely the one you were given.",
+      "boardroom": "You solve problems that were not assigned to you. Less often the one that was."
+    },
+    "strength": {
+      "spicy": "You spot the actual bottleneck while everyone else is arguing about the agenda.",
+      "boardroom": "You identify the real constraint while others are still discussing process."
+    },
+    "watch_out": {
+      "spicy": "Your open tabs are all someone else's job. Close one of yours today.",
+      "boardroom": "Much of your active work belongs to others. Close one of your own items first."
+    },
+    "recommended_pathway": "emergency",
+    "reviewed_by": null
+  },
+  {
+    "code": "MASF",
+    "name": "The Quiet Machine",
+    "diagnosis": {
+      "spicy": "Nobody's quite sure how much you do. Including you.",
+      "boardroom": "The volume of your output is not widely understood. Including by you."
+    },
+    "strength": {
+      "spicy": "You move fast and land things softly. Very rare combination, genuinely valuable.",
+      "boardroom": "You act quickly while managing how it lands — an unusual and valuable combination."
+    },
+    "watch_out": {
+      "spicy": "Invisible work gets counted as no work. Say what you finished.",
+      "boardroom": "Unreported work is treated as absent. State what you have completed."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "MASO",
+    "name": "The Pitch",
+    "diagnosis": {
+      "spicy": "Beautiful start. Thrilling middle. The end is somewhere in your drafts folder.",
+      "boardroom": "Strong openings and compelling delivery. Completion is less consistent."
+    },
+    "strength": {
+      "spicy": "You get people to care about something that doesn't exist yet. That's a real skill.",
+      "boardroom": "You build support for work that does not yet exist. That is a genuine capability."
+    },
+    "watch_out": {
+      "spicy": "Enthusiasm is a promise. Unfinished ones get remembered.",
+      "boardroom": "Enthusiasm creates expectation. Unmet expectations are remembered."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "MEDF",
+    "name": "The Dispatcher",
+    "diagnosis": {
+      "spicy": "You move fast by asking fast. Efficient, until you've asked four people the same thing.",
+      "boardroom": "You move quickly by consulting quickly. Efficient, provided the consultation is not duplicated."
+    },
+    "strength": {
+      "spicy": "Nothing sits in your queue getting stale. You route things.",
+      "boardroom": "Work does not stagnate with you. You route it effectively."
+    },
+    "watch_out": {
+      "spicy": "Ten minutes on your own first. Most of the questions answer themselves.",
+      "boardroom": "Attempt it alone for ten minutes first. Many questions resolve themselves."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "MEDO",
+    "name": "The Firework",
+    "diagnosis": {
+      "spicy": "Extremely bright, extremely fast, briefly. Then everyone looks around for the next one.",
+      "boardroom": "High energy and high impact in short bursts, with limited follow-through."
+    },
+    "strength": {
+      "spicy": "You start things other people were too sensible to start.",
+      "boardroom": "You initiate work others consider too risky to begin."
+    },
+    "watch_out": {
+      "spicy": "Starting is the fun bit. Finishing is the bit that counts.",
+      "boardroom": "Initiation is the enjoyable phase. Completion is the phase that is measured."
+    },
+    "recommended_pathway": "no-energy",
+    "reviewed_by": null
+  },
+  {
+    "code": "MESF",
+    "name": "The Producer",
+    "diagnosis": {
+      "spicy": "You get it over the line and you got seven people to help. They didn't mind.",
+      "boardroom": "You deliver, and you mobilise others to help. They tend not to mind."
+    },
+    "strength": {
+      "spicy": "You use the whole building. Most people never work out they're allowed to.",
+      "boardroom": "You draw on the whole organisation. Many people never realise they may."
+    },
+    "watch_out": {
+      "spicy": "Sometimes the answer is you, alone, for twenty minutes.",
+      "boardroom": "Occasionally the answer is twenty minutes of your own focused work."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "MESO",
+    "name": "The Enthusiast",
+    "diagnosis": {
+      "spicy": "Twelve open tabs, emotionally.",
+      "boardroom": "Considerable simultaneous investment in a number of unfinished things."
+    },
+    "strength": {
+      "spicy": "You raise the temperature of a room in a good way. Teams need one of you.",
+      "boardroom": "You raise energy in a room constructively. Teams benefit from having one."
+    },
+    "watch_out": {
+      "spicy": "Pick three. Close the other nine. It'll hurt for an hour.",
+      "boardroom": "Choose three priorities and close the rest."
+    },
+    "recommended_pathway": "no-energy",
+    "reviewed_by": null
+  },
+  {
+    "code": "PADF",
+    "name": "The Operator",
+    "diagnosis": {
+      "spicy": "Genuinely annoying to work against.",
+      "boardroom": "A genuinely difficult person to compete with."
+    },
+    "strength": {
+      "spicy": "You plan it, try it yourself, say it straight, and finish it. There isn't a gap to exploit.",
+      "boardroom": "You plan, attempt, communicate clearly and complete. There is little exposure."
+    },
+    "watch_out": {
+      "spicy": "You're hard to help. People stop offering, and eventually stop telling you things.",
+      "boardroom": "You are difficult to assist, and people may stop offering — and stop volunteering information."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "PADO",
+    "name": "The Architect",
+    "diagnosis": {
+      "spicy": "Magnificent plans. Someone else is going to build them.",
+      "boardroom": "Excellent planning, with delivery frequently left to others."
+    },
+    "strength": {
+      "spicy": "You see the whole shape before anyone else. That saves entire quarters.",
+      "boardroom": "You see the full structure early, which can save considerable time."
+    },
+    "watch_out": {
+      "spicy": "A plan nobody executed is a document.",
+      "boardroom": "An unexecuted plan is only a document."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "PASF",
+    "name": "The Safe Pair of Hands",
+    "diagnosis": {
+      "spicy": "It always arrives, it's always right, and nobody knows it was hard.",
+      "boardroom": "Work arrives on time and correct, and the difficulty is rarely visible."
+    },
+    "strength": {
+      "spicy": "You are the person things get given to when it actually matters.",
+      "boardroom": "You are trusted with work when the stakes are high."
+    },
+    "watch_out": {
+      "spicy": "Reliable people get more work, not more credit. Ask for the credit.",
+      "boardroom": "Reliability attracts volume rather than recognition. Ask for the recognition."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "PASO",
+    "name": "The Strategist",
+    "diagnosis": {
+      "spicy": "You've thought about it beautifully from every angle and told nobody the conclusion.",
+      "boardroom": "You have considered it thoroughly from every angle without communicating the conclusion."
+    },
+    "strength": {
+      "spicy": "Your read of a situation is usually right, and usually early.",
+      "boardroom": "Your assessment of a situation is generally accurate and generally early."
+    },
+    "watch_out": {
+      "spicy": "An unshared insight scores zero. Say it in the meeting, not after.",
+      "boardroom": "An unshared insight has no effect. Raise it during the meeting."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "PEDF",
+    "name": "The Auditor",
+    "diagnosis": {
+      "spicy": "You check, you confirm, you deliver, and you have receipts for all of it.",
+      "boardroom": "You verify, confirm, deliver, and maintain a clear record throughout."
+    },
+    "strength": {
+      "spicy": "Nothing goes missing on your watch. Extremely underrated.",
+      "boardroom": "Nothing is lost under your management. This is consistently undervalued."
+    },
+    "watch_out": {
+      "spicy": "Confirming everything reads as not deciding anything. Decide the small ones.",
+      "boardroom": "Confirming everything can appear as an absence of decision. Decide the minor items yourself."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "PEDO",
+    "name": "The Consultant",
+    "diagnosis": {
+      "spicy": "Superb diagnosis, delivered clearly, then handed to someone else with a smile.",
+      "boardroom": "Strong diagnosis, clearly communicated, then passed on for delivery."
+    },
+    "strength": {
+      "spicy": "You can explain a mess to people who caused it without a fight breaking out.",
+      "boardroom": "You can explain a problem to those responsible for it without escalation."
+    },
+    "watch_out": {
+      "spicy": "Own one all the way to the end this quarter. Just one.",
+      "boardroom": "Take one item through to completion yourself this quarter."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "PESF",
+    "name": "The Diplomat",
+    "diagnosis": {
+      "spicy": "Everyone is consulted, everyone is comfortable, and somehow it still ships.",
+      "boardroom": "Everyone is consulted and comfortable, and delivery still occurs."
+    },
+    "strength": {
+      "spicy": "You get difficult groups to agree. That's most of management, done early.",
+      "boardroom": "You build agreement among difficult groups — much of management, done early."
+    },
+    "watch_out": {
+      "spicy": "Consensus takes time you sometimes don't have. Some calls are just yours.",
+      "boardroom": "Consensus is time-expensive. Some decisions are simply yours to take."
+    },
+    "recommended_pathway": "full",
+    "reviewed_by": null
+  },
+  {
+    "code": "PESO",
+    "name": "The Committee",
+    "diagnosis": {
+      "spicy": "You have considered every angle and started nothing.",
+      "boardroom": "You have considered every angle and have not yet begun."
+    },
+    "strength": {
+      "spicy": "You catch the risk everyone else waved through. That's worth a lot, once things are moving.",
+      "boardroom": "You identify risks others accept without scrutiny — valuable, once work is in motion."
+    },
+    "watch_out": {
+      "spicy": "The plan is not the work. Do the smallest real version this week.",
+      "boardroom": "Planning is not delivery. Complete the smallest real version this week."
+    },
+    "recommended_pathway": "emergency",
+    "reviewed_by": null
+  }
+]
