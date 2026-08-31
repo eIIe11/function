@@ -1,0 +1,71 @@
+{
+  "competency_model_version": "1.0.0",
+  "bands": [
+    { "id": "emerging", "label": "Emerging", "min": 0, "max": 39 },
+    { "id": "developing", "label": "Developing", "min": 40, "max": 64 },
+    { "id": "capable", "label": "Capable", "min": 65, "max": 84 },
+    { "id": "annoyingly_capable", "label": "Annoyingly Capable", "min": 85, "max": 100 }
+  ],
+  "competencies": [
+    {
+      "code": "AGY",
+      "name": "Agency",
+      "colour": "--acid",
+      "definition": "Moving from problem to possible action without waiting to be rescued"
+    },
+    {
+      "code": "INI",
+      "name": "Initiative",
+      "colour": "--tangerine",
+      "definition": "Noticing what needs to happen before being told"
+    },
+    {
+      "code": "JDG",
+      "name": "Judgement",
+      "colour": "--cyan",
+      "definition": "Choosing well when several answers are defensible"
+    },
+    {
+      "code": "RSC",
+      "name": "Resourcefulness",
+      "colour": "--tangerine",
+      "definition": "Finding your own way to the information"
+    },
+    {
+      "code": "COM",
+      "name": "Communication",
+      "colour": "--magenta",
+      "definition": "Transferring meaning, not just expressing yourself"
+    },
+    {
+      "code": "ACC",
+      "name": "Accountability",
+      "colour": "--violet",
+      "definition": "Naming your part without collapsing"
+    },
+    {
+      "code": "RES",
+      "name": "Resilience",
+      "colour": "--violet",
+      "definition": "Continuing usefully while uncomfortable — and knowing when not to"
+    },
+    {
+      "code": "AWR",
+      "name": "Professional awareness",
+      "colour": "--cyan",
+      "definition": "Understanding purpose, context and incentives"
+    },
+    {
+      "code": "EXE",
+      "name": "Execution",
+      "colour": "--acid",
+      "definition": "Closing loops; outcome, not activity"
+    },
+    {
+      "code": "SOC",
+      "name": "Social intelligence",
+      "colour": "--magenta",
+      "definition": "Reading people, rooms and consequences"
+    }
+  ]
+}

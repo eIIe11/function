@@ -1,0 +1,64 @@
+{
+  "id": "w01-mess",
+  "type": "open_response",
+  "scored": true,
+  "difficulty": "stretch",
+  "competency_weights": { "JDG": 0.4, "AGY": 0.3, "ACC": 0.3 },
+  "prompt": {
+    "spicy": "There is no best answer to this one. We've checked. Pick what you'd do and defend it in a few lines — you're graded on the reasoning, not the choice.\n\nYou're two days from a deadline on a piece of work you were told to do a specific way. You're now fairly sure the specified way produces a misleading result. Not wrong exactly — misleading. The person who specified it is senior, has done this for eleven years, and is on annual leave until the day after the deadline.\n\nDoing it their way: on time, defensible, quietly misleading.\nDoing it your way: on time, better, and you overrode a senior person who isn't there to be asked.\nDoing both: you don't have time to do both properly, and you know it.\n\nWhat do you do, and why?",
+    "boardroom": "There is no strongest answer here. Choose an approach and justify it briefly — the reasoning is what is assessed, not the choice.\n\nYou are two days from a deadline on work you were instructed to complete in a specified way. You now believe that method produces a misleading result — not incorrect, but misleading. The person who specified it is senior, highly experienced, and on leave until the day after the deadline.\n\nTheir method: on time, defensible, quietly misleading.\nYour method: on time, better, but overriding a senior colleague in their absence.\nBoth: there is insufficient time to do either properly.\n\nWhat do you do, and why?"
+  },
+  "payload": {
+    "kind": "open_response",
+    "min_chars": 120,
+    "rubric": [
+      {
+        "criterion": "Names the actual trade-off",
+        "detail": {
+          "spicy": "Does your answer say what you're giving up? Every option here costs something. An answer that only lists upsides hasn't engaged with the problem.",
+          "boardroom": "Does the response identify what is being sacrificed? Each option has a cost, and an answer citing only benefits has not engaged with the trade-off."
+        }
+      },
+      {
+        "criterion": "Reversibility",
+        "detail": {
+          "spicy": "Does it consider whether the decision can be undone later? Misleading output that ships to a client is much harder to reverse than a two-day delay.",
+          "boardroom": "Does it consider whether the decision is reversible? Misleading output released externally is considerably harder to correct than a short delay."
+        }
+      },
+      {
+        "criterion": "Leaves a trail",
+        "detail": {
+          "spicy": "Does someone returning from leave find out what you decided and why, without having to interrogate you? A note counts. Silence doesn't.",
+          "boardroom": "Would a colleague returning from leave be able to establish what was decided and why, without further enquiry? A written note satisfies this; silence does not."
+        }
+      },
+      {
+        "criterion": "Proportionality",
+        "detail": {
+          "spicy": "Is the response scaled to the actual stakes? Escalating to a director over a formatting choice is as much a judgement failure as saying nothing about a real problem.",
+          "boardroom": "Is the response proportionate to the stakes? Over-escalation is as much a judgement failure as under-reporting."
+        }
+      },
+      {
+        "criterion": "Respects expertise without deferring to it entirely",
+        "detail": {
+          "spicy": "Eleven years is real information and not a trump card. Does your answer take it seriously without hiding behind it?",
+          "boardroom": "Long experience is meaningful evidence but not decisive. Does the response weigh it without using it to avoid the decision?"
+        }
+      }
+    ]
+  },
+  "debrief": {
+    "verdict": {
+      "spicy": "Every one of the three is defensible. The answers that score badly aren't the ones that pick the \"wrong\" option — they're the ones that don't notice a choice is being made at all.\n\nFor what it's worth: most experienced people do their way, flag it clearly in the document, and send a note to the senior person's inbox for when they land. That combination is on time, honest, and reversible. But an argument for doing it their way and flagging the concern is also a good answer — deference plus disclosure beats a silent override.",
+    "boardroom": "All three options are defensible. Weak responses are not those that choose differently, but those that fail to recognise a choice is being made.\n\nFor reference: most experienced practitioners would use their own method, document the deviation clearly, and leave a written note for the senior colleague's return. That is timely, transparent and reversible. An argument for following the specified method while formally recording the concern is also strong — deference with disclosure is preferable to a silent override."
+    },
+    "principle": {
+      "spicy": "When there's no right answer, the quality of the decision is entirely in whether you made it visible.",
+      "boardroom": "Where no correct answer exists, the quality of the decision lies in whether it was made visible."
+    }
+  },
+  "tags": ["mess", "judgement"],
+  "reviewed_by": null
+}

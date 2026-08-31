@@ -1,0 +1,62 @@
+[
+  {
+    "id": "nobody-came",
+    "name": "Nobody Came",
+    "evidence": "Finished Unit 01 in one sitting",
+    "sticker": { "shape": "circle", "colour": "--acid", "rotation": -6 }
+  },
+  {
+    "id": "ten-minute-rule",
+    "name": "Ten-Minute Rule",
+    "evidence": "Solved 5 problems before escalating",
+    "sticker": { "shape": "shield", "colour": "--cyan", "rotation": 4 }
+  },
+  {
+    "id": "closed-the-loop",
+    "name": "Closed the Loop",
+    "evidence": "10 execution items at 0.8 or above",
+    "sticker": { "shape": "circle", "colour": "--tangerine", "rotation": 9 }
+  },
+  {
+    "id": "took-it-well",
+    "name": "Took It Well",
+    "evidence": "5 feedback scenarios in a row at 0.8 or above",
+    "sticker": { "shape": "star", "colour": "--magenta", "rotation": -11 }
+  },
+  {
+    "id": "read-the-room",
+    "name": "Read the Room",
+    "evidence": "Full marks on a subtext deck",
+    "sticker": { "shape": "square", "colour": "--violet", "rotation": 3 }
+  },
+  {
+    "id": "asked-the-right-question",
+    "name": "Asked the Right Question",
+    "evidence": "Escalated correctly when escalation was the right call",
+    "sticker": { "shape": "shield", "colour": "--acid", "rotation": -3 }
+  },
+  {
+    "id": "wrong-interestingly",
+    "name": "Wrong, Interestingly",
+    "evidence": "Chose a weak option and wrote a genuinely good justification",
+    "sticker": { "shape": "star", "colour": "--tangerine", "rotation": 13 }
+  },
+  {
+    "id": "still-here",
+    "name": "Still Here",
+    "evidence": "Finished a 30-day commitment",
+    "sticker": { "shape": "circle", "colour": "--violet", "rotation": -8 }
+  },
+  {
+    "id": "showed-your-working",
+    "name": "Showed Your Working",
+    "evidence": "Flagged a judgement call in writing before anyone asked",
+    "sticker": { "shape": "square", "colour": "--cyan", "rotation": 7 }
+  },
+  {
+    "id": "honest-cold-open",
+    "name": "Honest Cold Open",
+    "evidence": "Answered a cold open, then changed your mind by the end",
+    "sticker": { "shape": "circle", "colour": "--magenta", "rotation": -4 }
+  }
+]

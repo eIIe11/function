@@ -1,0 +1,12 @@
+[
+  { "level": 1, "name": "Technically Present", "xp": 0 },
+  { "level": 2, "name": "Load-Bearing", "xp": 150 },
+  { "level": 3, "name": "Basically Fine", "xp": 400 },
+  { "level": 4, "name": "Reliably Unbothered", "xp": 750 },
+  { "level": 5, "name": "Noticeably Competent", "xp": 1200 },
+  { "level": 6, "name": "Quietly Formidable", "xp": 1800 },
+  { "level": 7, "name": "Would Have Fixed It Already", "xp": 2600 },
+  { "level": 8, "name": "Suspiciously Effective", "xp": 3600 },
+  { "level": 9, "name": "Frankly Unreasonable", "xp": 4900 },
+  { "level": 10, "name": "Annoyingly Capable", "xp": 6500 }
+]

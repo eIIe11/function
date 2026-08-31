@@ -1,0 +1,608 @@
+[
+  {
+    "id": "w01-r01",
+    "type": "hot_takes",
+    "scored": true,
+    "difficulty": "intro",
+    "competency_weights": { "AGY": 0.5, "RES": 0.5 },
+    "prompt": {
+      "spicy": "Swipe. Fast. You'll get the annoying nuanced answer after each one.",
+      "boardroom": "Respond quickly. The considered answer follows each statement."
+    },
+    "payload": {
+      "kind": "hot_takes",
+      "cards": [
+        {
+          "id": "h1",
+          "statement": {
+            "spicy": "Asking questions makes you look incompetent.",
+            "boardroom": "Asking questions makes you appear less competent."
+          },
+          "agree_is_stronger": false,
+          "nuance": {
+            "spicy": "Wrong, but not for the reason people say. Questions don't make you look incompetent — *unattempted* questions do. \"How do I start this?\" and \"I've built the first tab, is this the right structure?\" land completely differently, and only one of them shows your working.",
+            "boardroom": "Incorrect, though with a caveat. Questions do not damage credibility; unattempted questions do. \"How do I begin?\" and \"I have drafted the structure, is this correct?\" are received very differently."
+          }
+        },
+        {
+          "id": "h2",
+          "statement": {
+            "spicy": "If your manager hasn't given you the information, that's their failure, not yours.",
+            "boardroom": "If your manager has not provided the information, the responsibility for the delay is theirs."
+          },
+          "agree_is_stronger": false,
+          "nuance": {
+            "spicy": "It might genuinely be their failure. The problem is that it's still your outcome. Being correct about whose fault the delay is has never once completed a piece of work.",
+            "boardroom": "That may be accurate, and it remains your outcome. Correctly assigning responsibility for a delay does not advance the work."
+          }
+        },
+        {
+          "id": "h3",
+          "statement": {
+            "spicy": "Doing something slightly wrong is usually better than doing nothing.",
+            "boardroom": "Imperfect action is generally preferable to inaction."
+          },
+          "agree_is_stronger": true,
+          "nuance": {
+            "spicy": "Usually true, with one hard exception: anything irreversible, anything that touches a client or money, and anything involving safety. Those you check first. Everything else, move.",
+            "boardroom": "Generally true, with clear exceptions: irreversible actions, anything client- or finance-facing, and anything with a safety dimension should be confirmed first."
+          }
+        },
+        {
+          "id": "h4",
+          "statement": {
+            "spicy": "You should feel confident before you attempt something new.",
+            "boardroom": "Confidence should precede attempting something new."
+          },
+          "agree_is_stronger": false,
+          "nuance": {
+            "spicy": "Backwards. Confidence is downstream of having done it, badly, twice. Bandura called it mastery experience. Waiting to feel ready is waiting for an effect to arrive before its cause.",
+            "boardroom": "This inverts the relationship. Confidence follows completed attempts — what Bandura termed mastery experience. Waiting to feel ready is waiting for the effect before the cause."
+          }
+        },
+        {
+          "id": "h5",
+          "statement": {
+            "spicy": "Some problems genuinely aren't yours to solve.",
+            "boardroom": "Some problems are legitimately not yours to solve."
+          },
+          "agree_is_stronger": true,
+          "nuance": {
+            "spicy": "Correct, and this is the part people skip when they hear \"agency\". Handing something back to the right owner, clearly and early, is agency. Silently absorbing everything is just a slower kind of passivity.",
+            "boardroom": "Correct, and frequently overlooked. Returning a problem to its correct owner promptly and clearly is itself agency. Absorbing everything is a slower form of passivity."
+          }
+        },
+        {
+          "id": "h6",
+          "statement": {
+            "spicy": "If you're anxious about a task, that's a sign it matters.",
+            "boardroom": "Anxiety about a task indicates its importance."
+          },
+          "agree_is_stronger": false,
+          "nuance": {
+            "spicy": "Sometimes. Very often it's a sign you don't know how to do one specific part of it, which feels identical from the inside and has a completely different fix. Check that first — it's a much smaller problem.",
+            "boardroom": "Occasionally. More often it indicates a specific skill gap, which presents identically but requires a different response. That is worth checking first."
+          }
+        }
+      ]
+    },
+    "debrief": {
+      "verdict": {
+        "spicy": "The pattern in all six: agency isn't intensity. It's knowing which of several different problems you actually have.",
+        "boardroom": "The common thread: agency is not effort. It is correctly identifying which problem you have."
+      },
+      "principle": {
+        "spicy": "Diagnose before you push. Most stuck-ness is one of four things, and three of them are quick.",
+        "boardroom": "Diagnose before applying effort. Most blockages resolve to one of a few causes, and most are quick."
+      }
+    },
+    "tags": ["recognise", "hot-takes"],
+    "reviewed_by": null
+  },
+  {
+    "id": "w01-r02",
+    "type": "sequence",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "AGY": 0.4, "RSC": 0.4, "COM": 0.2 },
+    "prompt": {
+      "spicy": "You're stuck on something unfamiliar. Put these in the order you should actually do them.",
+      "boardroom": "You are stuck on unfamiliar work. Place these in the order they should be carried out."
+    },
+    "payload": {
+      "kind": "sequence",
+      "steps": [
+        {
+          "id": "s1",
+          "label": {
+            "spicy": "Search the exact wording of the problem in the docs and chat history",
+            "boardroom": "Search the exact wording of the problem in documentation and message history"
+          }
+        },
+        {
+          "id": "s2",
+          "label": {
+            "spicy": "Find the last time someone did this and copy their version",
+            "boardroom": "Locate the most recent example of this work and use it as a model"
+          }
+        },
+        {
+          "id": "s3",
+          "label": {
+            "spicy": "Write down, in one sentence, exactly where you're stuck",
+            "boardroom": "Write a one-sentence statement of exactly where you are stuck"
+          }
+        },
+        {
+          "id": "s4",
+          "label": {
+            "spicy": "Send that sentence to the person most likely to know",
+            "boardroom": "Send that statement to the person most likely to know"
+          }
+        },
+        {
+          "id": "s5",
+          "label": {
+            "spicy": "Escalate to your manager",
+            "boardroom": "Escalate to your manager"
+          }
+        }
+      ],
+      "correct_order": ["s1", "s2", "s3", "s4", "s5"]
+    },
+    "debrief": {
+      "verdict": {
+        "spicy": "Search, copy, write it down, ask one person, then escalate. The order matters more than the speed — every step you skip makes the next one worse.",
+        "boardroom": "Search, model, articulate, ask one person, then escalate. The sequence matters more than the pace; each skipped step degrades the next."
+      },
+      "principle": {
+        "spicy": "Escalation is the fifth move, not the first. Writing it down is the third, and it's the one that usually ends it.",
+        "boardroom": "Escalation is the fifth step, not the first. Articulating the blocker is the third, and frequently the last one needed."
+      }
+    },
+    "tags": ["recognise", "escalation-ladder"],
+    "reviewed_by": null
+  },
+  {
+    "id": "w01-r03",
+    "type": "triage",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "JDG": 0.4, "AGY": 0.3, "EXE": 0.3 },
+    "prompt": {
+      "spicy": "It's 9:12am. Eight things happened while you were asleep. Sort them. You have a 2pm deadline that hasn't moved.",
+      "boardroom": "It is 9:12am and eight items have arrived overnight. Sort them. A 2pm deadline remains in place."
+    },
+    "payload": {
+      "kind": "triage",
+      "buckets": [
+        { "id": "now", "label": "Do now" },
+        { "id": "schedule", "label": "Schedule" },
+        { "id": "ask", "label": "Ask" },
+        { "id": "bin", "label": "Bin" }
+      ],
+      "demands": [
+        {
+          "id": "t1",
+          "label": {
+            "spicy": "Client emails at 7:04am: \"the figure on slide 6 looks wrong to me\"",
+            "boardroom": "Client email at 7:04am querying a figure on slide 6"
+          },
+          "correct_bucket": "now",
+          "reason": {
+            "spicy": "A client questioning a number is the only genuinely urgent thing on this list. Everything else can wait an hour. This can't wait until after lunch.",
+            "boardroom": "A client query on a figure is the only genuinely time-critical item here. It should not wait until the afternoon."
+          }
+        },
+        {
+          "id": "t2",
+          "label": {
+            "spicy": "Colleague asks you to \"have a quick look\" at their deck. No deadline given",
+            "boardroom": "A colleague asks you to review their deck. No deadline stated"
+          },
+          "correct_bucket": "schedule",
+          "reason": {
+            "spicy": "\"Quick look\" is never quick. Give it a real slot this afternoon and tell them when — that's a better answer than doing it now and resenting it.",
+            "boardroom": "Such reviews take longer than implied. Allocate a specific slot and confirm the time, which is preferable to interrupting current work."
+          }
+        },
+        {
+          "id": "t3",
+          "label": {
+            "spicy": "You've realised you don't know whether the 2pm thing needs the old template or the new one",
+            "boardroom": "You are unsure whether the 2pm deliverable requires the previous or current template"
+          },
+          "correct_bucket": "ask",
+          "reason": {
+            "spicy": "This is the one people get wrong. It's a 30-second question that decides four hours of work. Ask it at 9:13, not 1:40.",
+            "boardroom": "This is a brief question that determines several hours of work. It should be asked immediately, not later in the day."
+          }
+        },
+        {
+          "id": "t4",
+          "label": {
+            "spicy": "All-staff email announcing the new coffee machine, with a poll about the pods",
+            "boardroom": "All-staff email regarding a new coffee machine, including a poll"
+          },
+          "correct_bucket": "bin",
+          "reason": {
+            "spicy": "No. Not today. The pods will be decided without you and you will live.",
+            "boardroom": "No action required today."
+          }
+        },
+        {
+          "id": "t5",
+          "label": {
+            "spicy": "Recurring monthly report due Friday. Takes 90 minutes. You've done it before",
+            "boardroom": "Recurring monthly report due Friday. Approximately 90 minutes. Previously completed by you"
+          },
+          "correct_bucket": "schedule",
+          "reason": {
+            "spicy": "Known length, known method, known deadline. That's the definition of schedulable — and doing it now would be procrastination wearing a productivity costume.",
+            "boardroom": "Known duration, method and deadline. This is straightforwardly schedulable; completing it now would displace more urgent work."
+          }
+        },
+        {
+          "id": "t6",
+          "label": {
+            "spicy": "Tool you need for the 2pm task is throwing an error you've never seen",
+            "boardroom": "A tool required for the 2pm task is producing an unfamiliar error"
+          },
+          "correct_bucket": "now",
+          "reason": {
+            "spicy": "It blocks the deadline, so it's now. Ten minutes of searching, then it becomes an Ask with a specific error message attached.",
+            "boardroom": "It blocks the deadline, so it is immediate. Ten minutes of searching, then escalate with the specific error text."
+          }
+        },
+        {
+          "id": "t7",
+          "label": {
+            "spicy": "Invite to an optional 45-minute \"knowledge share\" at 1:30pm",
+            "boardroom": "Optional 45-minute knowledge-sharing session at 1:30pm"
+          },
+          "correct_bucket": "bin",
+          "reason": {
+            "spicy": "Optional, and 30 minutes before your deadline. Decline it properly rather than leaving it sitting there unanswered — declining is also a decision.",
+            "boardroom": "Optional and immediately before your deadline. Decline it rather than leaving it unanswered; declining is a decision."
+          }
+        },
+        {
+          "id": "t8",
+          "label": {
+            "spicy": "Your manager, 8:50am: \"free for a quick chat at some point?\"",
+            "boardroom": "Your manager at 8:50am asks whether you are free for a brief conversation"
+          },
+          "correct_bucket": "ask",
+          "reason": {
+            "spicy": "Reply now, propose a time after 2pm, and ask if it's urgent. Don't spend the morning quietly assuming you're being fired.",
+            "boardroom": "Respond promptly, propose a time after 2pm, and ask whether it is urgent, rather than speculating."
+          }
+        }
+      ]
+    },
+    "debrief": {
+      "verdict": {
+        "spicy": "Only two things were actually now. The one people misplace is the template question — it's tiny, it's boring, and it decides your whole afternoon.",
+        "boardroom": "Only two items were genuinely immediate. The commonly misplaced one is the template question: minor in itself, decisive for the rest of the day."
+      },
+      "principle": {
+        "spicy": "Ask the cheap question that unblocks the expensive work. First, not last.",
+        "boardroom": "Ask the low-cost question that unblocks high-cost work, and ask it first."
+      }
+    },
+    "tags": ["recognise", "triage"],
+    "reviewed_by": null
+  },
+  {
+    "id": "w01-r04",
+    "type": "subtext",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "SOC": 0.5, "AGY": 0.3, "AWR": 0.2 },
+    "prompt": {
+      "spicy": "A conversation, one line at a time. After each line: what did they actually mean?",
+      "boardroom": "A conversation, line by line. After each, identify what was actually meant."
+    },
+    "payload": {
+      "kind": "subtext",
+      "lines": [
+        {
+          "id": "l1",
+          "speaker": "Dani (your manager)",
+          "line": {
+            "spicy": "\"So — how are you finding the Renwick thing? No rush on it.\"",
+            "boardroom": "\"How are you finding the Renwick work? There is no particular rush.\""
+          },
+          "options": [
+            {
+              "id": "a",
+              "quality": 1,
+              "label": {
+                "spicy": "She's noticed there's been no movement and is giving you a soft opening to say you're stuck",
+                "boardroom": "She has noticed a lack of progress and is offering an opportunity to raise a blocker"
+              },
+              "consequence": {
+                "spicy": "Correct. \"No rush\" said out loud almost always means someone has looked.",
+                "boardroom": "Correct. An explicit reassurance about timing usually indicates the timing has been reviewed."
+              }
+            },
+            {
+              "id": "b",
+              "quality": 0.4,
+              "label": {
+                "spicy": "She's making conversation and genuinely means no rush",
+                "boardroom": "This is general conversation and the timeline is genuinely flexible"
+              },
+              "consequence": {
+                "spicy": "Possible. But managers don't usually name a specific project by accident.",
+                "boardroom": "Possible, though naming a specific project is rarely incidental."
+              }
+            },
+            {
+              "id": "c",
+              "quality": 0.2,
+              "label": {
+                "spicy": "She's annoyed and this is a warning shot",
+                "boardroom": "She is dissatisfied and this is an early warning"
+              },
+              "consequence": {
+                "spicy": "Reading hostility into a mild question is how people end up defensive in a conversation that was offering help.",
+                "boardroom": "Interpreting a mild enquiry as hostile leads to a defensive response to an offer of support."
+              }
+            }
+          ]
+        },
+        {
+          "id": "l2",
+          "speaker": "Dani",
+          "line": {
+            "spicy": "\"Right. And you've had everything you need from Marcus?\"",
+            "boardroom": "\"And you have everything you need from Marcus?\""
+          },
+          "options": [
+            {
+              "id": "a",
+              "quality": 1,
+              "label": {
+                "spicy": "She suspects the hold-up is Marcus and is checking whether you chased him",
+                "boardroom": "She suspects the delay involves Marcus and is checking whether you followed up"
+              },
+              "consequence": {
+                "spicy": "Correct. The honest answer here matters: \"I asked once on Tuesday and haven't followed up\" is fine. \"Yes, all good\" when it isn't, is not.",
+                "boardroom": "Correct. An accurate answer matters. \"I asked on Tuesday and have not followed up\" is acceptable; an inaccurate reassurance is not."
+              }
+            },
+            {
+              "id": "b",
+              "quality": 0.5,
+              "label": {
+                "spicy": "She's about to go and shout at Marcus",
+                "boardroom": "She intends to raise it with Marcus"
+              },
+              "consequence": {
+                "spicy": "She might. But she's asking you first, which means she wants to know what you did before she does anything.",
+                "boardroom": "Possibly, but she is asking you first, which indicates she wants to know what you have done."
+              }
+            },
+            {
+              "id": "c",
+              "quality": 0.2,
+              "label": {
+                "spicy": "She's checking whether Marcus is underperforming",
+                "boardroom": "She is assessing Marcus's performance"
+              },
+              "consequence": {
+                "spicy": "The question was about your project, in your one-to-one. It's about you.",
+                "boardroom": "The question concerns your project in your review. It is about your work."
+              }
+            }
+          ]
+        },
+        {
+          "id": "l3",
+          "speaker": "Dani",
+          "line": {
+            "spicy": "\"Okay. Well — shout if you need anything.\"",
+            "boardroom": "\"Do let me know if you need anything.\""
+          },
+          "options": [
+            {
+              "id": "a",
+              "quality": 1,
+              "label": {
+                "spicy": "The window is closing. If you're stuck, say it in the next ten seconds, because this offer expires",
+                "boardroom": "The opportunity is closing. Any blocker should be raised now, as the offer is time-limited"
+              },
+              "consequence": {
+                "spicy": "Correct, and this is the moment people waste. \"Actually — one thing\" is the highest-value sentence in the whole conversation.",
+                "boardroom": "Correct, and this is the point most often missed. Raising one specific item here is the highest-value action available."
+              }
+            },
+            {
+              "id": "b",
+              "quality": 0.4,
+              "label": {
+                "spicy": "A standard sign-off, no meaning",
+                "boardroom": "A conventional closing remark with no specific meaning"
+              },
+              "consequence": {
+                "spicy": "It is a standard sign-off. It's also a door being held open, briefly.",
+                "boardroom": "It is conventional, and it is also a brief invitation."
+              }
+            },
+            {
+              "id": "c",
+              "quality": 0.3,
+              "label": {
+                "spicy": "She's satisfied and you got away with it",
+                "boardroom": "She is satisfied and no further action is needed"
+              },
+              "consequence": {
+                "spicy": "You didn't get away with anything. You deferred it to a future conversation with less goodwill in it.",
+                "boardroom": "Nothing has been resolved; it has been deferred to a later conversation with less latitude."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "debrief": {
+      "verdict": {
+        "spicy": "Three chances to say \"I'm stuck on X\", each one cheaper than the next. Most people take none of them and then get asked directly a week later.",
+        "boardroom": "Three opportunities to raise a specific blocker, each less costly than the next. Most are not taken, and the question is then asked directly a week later."
+      },
+      "principle": {
+        "spicy": "\"No rush\" means someone looked. Answer the question underneath the question.",
+        "boardroom": "Reassurance about timing indicates the timing was reviewed. Answer the underlying question."
+      }
+    },
+    "tags": ["recognise", "subtext"],
+    "reviewed_by": null
+  },
+  {
+    "id": "w01-r05",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "AGY": 0.5, "RSC": 0.5 },
+    "prompt": {
+      "spicy": "Which of these is a *blocker*, in the real sense — meaning it genuinely cannot proceed until someone else moves?",
+      "boardroom": "Which of these is genuinely a blocker — that is, work that cannot proceed until someone else acts?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "You don't have access to the system the data is in, and only IT can grant it",
+          "boardroom": "You lack system access which only IT can grant"
+        },
+        "consequence": {
+          "spicy": "A real blocker. Note what a real one looks like: a named person, a specific permission, an action only they can take.",
+          "boardroom": "A genuine blocker: a named party, a specific permission, an action only they can perform."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.3,
+        "label": {
+          "spicy": "You're not sure which of two approaches is better",
+          "boardroom": "You are uncertain which of two approaches is preferable"
+        },
+        "consequence": {
+          "spicy": "Not a blocker. That's a decision. Pick one, write down why in a line, and flag it. Reversible decisions are not blockers.",
+          "boardroom": "Not a blocker but a decision. Choose one, document the reasoning briefly, and flag it. Reversible decisions are not blockers."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.2,
+        "label": {
+          "spicy": "You've never done this before and don't know where to start",
+          "boardroom": "You have not done this before and are unsure how to begin"
+        },
+        "consequence": {
+          "spicy": "Not a blocker. That's the normal condition of a new job, and it's what the three moves are for.",
+          "boardroom": "Not a blocker. This is the standard condition in a new role, and is what the three-move process addresses."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.1,
+        "label": {
+          "spicy": "You're waiting for someone to reply to an email you sent this morning",
+          "boardroom": "You are awaiting a reply to an email sent this morning"
+        },
+        "consequence": {
+          "spicy": "Not yet. This morning isn't a delay, and there's almost always a part of the task that doesn't depend on the answer.",
+          "boardroom": "Not yet. A few hours is not a delay, and part of the task can usually proceed regardless."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "Only one of these is a blocker. Three of them are unfamiliarity, a decision, and impatience — all of which you can move on right now.",
+        "boardroom": "Only one is a blocker. The others are unfamiliarity, a pending decision, and a short wait — all of which permit progress."
+      },
+      "principle": {
+        "spicy": "A blocker has a name and a permission attached to it. If you can't name who has to move, you're not blocked.",
+        "boardroom": "A blocker has a named owner and a specific action. If you cannot name who must act, you are not blocked."
+      }
+    },
+    "tags": ["recognise", "blockers"],
+    "reviewed_by": null
+  },
+  {
+    "id": "w01-r06",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "stretch",
+    "competency_weights": { "AGY": 0.4, "COM": 0.4, "ACC": 0.2 },
+    "prompt": {
+      "spicy": "You've been sitting on something for four days. You're about to finally message about it. Which opening actually helps you?",
+      "boardroom": "You have deferred something for four days and are now raising it. Which opening is most effective?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "\"I've got the first two sections of the Renwick doc done. I'm stuck on the pricing table — I don't know if we use list or net. Can you confirm, or point me at an example?\"",
+          "boardroom": "\"The first two sections of the Renwick document are complete. I am stuck on the pricing table: I do not know whether to use list or net pricing. Can you confirm, or direct me to an example?\""
+        },
+        "consequence": {
+          "spicy": "Progress, a precise blocker, and two easy ways to answer. Nobody has to ask you a follow-up question, which is the entire trick.",
+          "boardroom": "Progress, a specific blocker, and two straightforward ways to respond. No clarifying question is required."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.5,
+        "label": {
+          "spicy": "\"Sorry to bother you — do you have five minutes to talk about Renwick?\"",
+          "boardroom": "\"Do you have five minutes to discuss Renwick?\""
+        },
+        "consequence": {
+          "spicy": "Polite and answerable, but it buys a meeting instead of an answer, and they'll arrive with no idea what to prepare.",
+          "boardroom": "Polite and answerable, but it schedules a discussion rather than obtaining an answer, with no context to prepare."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.3,
+        "label": {
+          "spicy": "\"Really sorry, I should have flagged this days ago, I've been meaning to and things have been mad, apologies again —\"",
+          "boardroom": "\"Apologies, I should have raised this sooner. It has been a busy period.\""
+        },
+        "consequence": {
+          "spicy": "Now they have to manage your feelings before they can answer your question. The apology costs them time and buys you nothing.",
+          "boardroom": "This requires them to respond to the apology before addressing the issue, which adds time without adding information."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.2,
+        "label": {
+          "spicy": "\"Quick q on Renwick when you get a sec\"",
+          "boardroom": "\"A quick question on Renwick when you have a moment.\""
+        },
+        "consequence": {
+          "spicy": "Zero information. They can't answer it, can't prioritise it, and now there are two messages where there should have been one.",
+          "boardroom": "It contains no information, cannot be answered or prioritised, and generates an additional exchange."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "The four days are not the problem any more — you can't unspend them. Make the message do all the work instead.",
+        "boardroom": "The delay cannot be recovered. The message itself should carry as much of the work as possible."
+      },
+      "principle": {
+        "spicy": "Progress, then the precise blocker, then an easy way to answer. Skip the apology.",
+        "boardroom": "State progress, then the specific blocker, then an easy route to a response. Omit the apology."
+      }
+    },
+    "tags": ["recognise", "escalation"],
+    "reviewed_by": null
+  }
+]

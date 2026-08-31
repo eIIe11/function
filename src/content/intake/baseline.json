@@ -1,0 +1,878 @@
+[
+  {
+    "id": "b01",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "intro",
+    "competency_weights": { "AGY": 0.6, "RES": 0.4 },
+    "prompt": {
+      "spicy": "You're doing a task you've never done. You've been stuck for 40 minutes. The person who'd know is in a meeting for another hour.",
+      "boardroom": "You are attempting an unfamiliar task and have been stuck for 40 minutes. The person who could help is in a meeting for another hour."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "Write down exactly where you're stuck, keep trying, and send them that note if you're still stuck when they're free",
+          "boardroom": "Document precisely where you are stuck, continue attempting it, and send that note if you are still stuck when they are free"
+        },
+        "consequence": {
+          "spicy": "You often solve it while writing the note down. If you don't, you've handed them a 30-second question instead of a 20-minute one.",
+          "boardroom": "Articulating the blocker frequently resolves it. If not, you have converted a long conversation into a short one."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.6,
+        "label": {
+          "spicy": "Move to another task and come back when they're out",
+          "boardroom": "Move to other work and return when they are available"
+        },
+        "consequence": {
+          "spicy": "Nothing catches fire. But you've bought an hour of not-learning-it, and the thing is still there at 5pm.",
+          "boardroom": "No damage done, though the task remains and you have gained no understanding of it."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.3,
+        "label": {
+          "spicy": "Message them anyway. They can read it when they're out",
+          "boardroom": "Message them now so they see it when the meeting ends"
+        },
+        "consequence": {
+          "spicy": "Fine once. Do it four times a day and you become the notification they learn to leave unread.",
+          "boardroom": "Acceptable occasionally. Repeated, it trains people to deprioritise your messages."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0,
+        "label": {
+          "spicy": "Guess, do it confidently, say nothing",
+          "boardroom": "Proceed on an assumption without flagging it"
+        },
+        "consequence": {
+          "spicy": "The guess is invisible until it's expensive. This is how a 40-minute problem becomes a Thursday.",
+          "boardroom": "An unflagged assumption stays invisible until it is costly to unwind."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "Being stuck isn't the failure. Being stuck silently and vaguely is.",
+        "boardroom": "Being stuck is not a failure. Being stuck without articulating it is."
+      },
+      "principle": {
+        "spicy": "Name the blocker precisely. Half of them die on contact with a sentence.",
+        "boardroom": "State the blocker precisely; many resolve in the act of describing them."
+      }
+    },
+    "tags": ["baseline", "agency"],
+    "reviewed_by": null
+  },
+  {
+    "id": "b02",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "AWR": 0.5, "JDG": 0.5 },
+    "prompt": {
+      "spicy": "You've been asked to \"tidy up the spreadsheet before Thursday\". Nobody said why. Thursday is a client meeting.",
+      "boardroom": "You have been asked to tidy a spreadsheet before Thursday. No reason was given. Thursday is a client meeting."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "Ask what it's being used for on Thursday, then tidy it for that",
+          "boardroom": "Ask what it will be used for on Thursday, then tidy it for that purpose"
+        },
+        "consequence": {
+          "spicy": "One question turns a chore into a useful thing. \"Tidy\" for a client means something different to \"tidy\" for the team.",
+          "boardroom": "A single question converts an ambiguous task into a specific one. Client-ready and internally tidy are different standards."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.6,
+        "label": {
+          "spicy": "Tidy it to a client-ready standard because you clocked the meeting",
+          "boardroom": "Tidy it to a client-ready standard, inferring from the meeting"
+        },
+        "consequence": {
+          "spicy": "Good inference. Still a guess — and if they wanted the raw workings, you've deleted them.",
+          "boardroom": "Sound inference, though still an assumption. If the workings were needed, removing them creates a problem."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.4,
+        "label": {
+          "spicy": "Make it neat: colours, borders, freeze the header row",
+          "boardroom": "Improve formatting: colour, borders, frozen header row"
+        },
+        "consequence": {
+          "spicy": "It looks lovely. Nobody asked for lovely. The numbers on tab 3 still contradict tab 1.",
+          "boardroom": "Presentation improves while the underlying inconsistency between tabs remains."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.2,
+        "label": {
+          "spicy": "Ask them to send a full spec of what \"tidy\" means",
+          "boardroom": "Request a written specification of what tidy means"
+        },
+        "consequence": {
+          "spicy": "Now they're doing your thinking, in writing, for a spreadsheet. You've made a small task into their task.",
+          "boardroom": "This transfers the thinking back to them and expands a small task into a larger one."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "\"Tidy\" is not an instruction. Purpose is the instruction.",
+        "boardroom": "Tidy is not an instruction. Purpose is the instruction."
+      },
+      "principle": {
+        "spicy": "Find out what the work is for before deciding what good looks like.",
+        "boardroom": "Establish the purpose before defining the standard."
+      }
+    },
+    "tags": ["baseline", "purpose"],
+    "reviewed_by": null
+  },
+  {
+    "id": "b03",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "INI": 0.6, "AWR": 0.4 },
+    "prompt": {
+      "spicy": "You notice the weekly report has had the same broken chart for three weeks. It isn't your report. Nobody's mentioned it.",
+      "boardroom": "You notice the weekly report has contained the same broken chart for three weeks. It is not your report and nobody has raised it."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "Tell the owner what's wrong, with the fix, in two lines",
+          "boardroom": "Tell the report owner what is wrong and what the fix is, briefly"
+        },
+        "consequence": {
+          "spicy": "Costs you 90 seconds. Buys you a reputation as the person who notices things and isn't smug about it.",
+          "boardroom": "A minimal cost that establishes you as someone who notices and communicates well."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.5,
+        "label": {
+          "spicy": "Fix it yourself, quietly, in their file",
+          "boardroom": "Correct it yourself in their file without mentioning it"
+        },
+        "consequence": {
+          "spicy": "The chart is fixed and the person still doesn't know they're doing it wrong. Next week: same chart.",
+          "boardroom": "The immediate issue resolves, but the owner learns nothing and the error recurs."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.3,
+        "label": {
+          "spicy": "Raise it in the team meeting so everyone benefits",
+          "boardroom": "Raise it in the team meeting for the benefit of everyone"
+        },
+        "consequence": {
+          "spicy": "Technically efficient. Feels to them like being corrected in public over something you could've DM'd.",
+          "boardroom": "Efficient in theory. In practice it reads as a public correction of something that could have been private."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.1,
+        "label": {
+          "spicy": "Not your report, not your problem",
+          "boardroom": "Take no action, as it is not your report"
+        },
+        "consequence": {
+          "spicy": "The report goes to the board. Someone eventually asks who spotted it. Nobody says your name.",
+          "boardroom": "The error persists into senior reporting, and the opportunity is gone."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "Initiative isn't doing extra work. It's routing information to whoever can act on it.",
+        "boardroom": "Initiative is not additional work. It is routing information to whoever can act on it."
+      },
+      "principle": {
+        "spicy": "Tell the owner. Privately. With the fix attached.",
+        "boardroom": "Inform the owner privately, and include the remedy."
+      }
+    },
+    "tags": ["baseline", "initiative"],
+    "reviewed_by": null
+  },
+  {
+    "id": "b04",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "RSC": 0.7, "JDG": 0.3 },
+    "prompt": {
+      "spicy": "A tool you need has thrown an error you've never seen. There's internal documentation somewhere. Probably.",
+      "boardroom": "A tool you need has produced an unfamiliar error. Internal documentation exists somewhere."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "Search the exact error text — docs, chat history, then the internet — for ten minutes",
+          "boardroom": "Search the exact error text across documentation, chat history and the internet for ten minutes"
+        },
+        "consequence": {
+          "spicy": "Someone in your company has already had this error and complained about it in writing. They usually have.",
+          "boardroom": "In most organisations someone has already encountered and documented this error."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.5,
+        "label": {
+          "spicy": "Restart everything and try again",
+          "boardroom": "Restart and retry"
+        },
+        "consequence": {
+          "spicy": "Works surprisingly often. Teaches you nothing, and the error returns on the day it matters.",
+          "boardroom": "Often effective, but it produces no understanding and the error will recur."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.4,
+        "label": {
+          "spicy": "Ask the team channel with a screenshot of the error",
+          "boardroom": "Post the error in the team channel with a screenshot"
+        },
+        "consequence": {
+          "spicy": "Not bad — a screenshot is real information. But you skipped the ten minutes that usually ends it.",
+          "boardroom": "Reasonable, and a screenshot is useful. However you have skipped the search that usually resolves it."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.2,
+        "label": {
+          "spicy": "Work around it and don't mention it",
+          "boardroom": "Work around it without reporting it"
+        },
+        "consequence": {
+          "spicy": "The workaround becomes permanent, undocumented, and yours forever.",
+          "boardroom": "The workaround becomes permanent and undocumented, and remains your responsibility."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "Ten minutes of proper searching resolves most of these. Twenty minutes of vague poking resolves none.",
+        "boardroom": "Ten minutes of structured searching resolves most such errors. Unstructured effort resolves few."
+      },
+      "principle": {
+        "spicy": "Search the exact string. Not your description of the string.",
+        "boardroom": "Search the exact error text, not a paraphrase of it."
+      }
+    },
+    "tags": ["baseline", "resourcefulness"],
+    "reviewed_by": null
+  },
+  {
+    "id": "b05",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "COM": 0.7, "ACC": 0.3 },
+    "prompt": {
+      "spicy": "You can't deliver both the analysis and the deck by Friday. You need to say so.",
+      "boardroom": "You cannot deliver both the analysis and the deck by Friday and need to raise it."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "\"I can have the analysis done Thursday, but not the deck as well. Can the deck move to Tuesday, or should I get someone on it?\"",
+          "boardroom": "\"I can complete the analysis by Thursday but not the deck as well. Can the deck move to Tuesday, or should it be reassigned?\""
+        },
+        "consequence": {
+          "spicy": "Two options, a real constraint, and something for them to say yes to. This gets granted almost every time.",
+          "boardroom": "A stated constraint with two viable options. Requests in this form are usually granted."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.6,
+        "label": {
+          "spicy": "\"Friday's tight for both. Which one do you actually need first?\"",
+          "boardroom": "\"Friday is tight for both. Which do you need first?\""
+        },
+        "consequence": {
+          "spicy": "Honest and answerable. You've made them do the sequencing you could've proposed.",
+          "boardroom": "Clear and answerable, though it asks them to do prioritisation you could have proposed."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.3,
+        "label": {
+          "spicy": "\"This workload isn't really sustainable.\"",
+          "boardroom": "\"The current workload is not sustainable.\""
+        },
+        "consequence": {
+          "spicy": "True, possibly urgent, and completely un-actionable. It gets filed as a mood, not a request.",
+          "boardroom": "Possibly accurate but not actionable. It registers as sentiment rather than a request."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0,
+        "label": {
+          "spicy": "Say nothing, do both badly, mention it Friday at 4:58pm",
+          "boardroom": "Say nothing, attempt both, and raise it late on Friday"
+        },
+        "consequence": {
+          "spicy": "Two weak deliverables and a surprise. The surprise is the part they'll remember.",
+          "boardroom": "Two substandard deliverables plus a late surprise, which is the part that is remembered."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "\"I'm struggling\" is a feeling. \"Move the deck to Tuesday\" is a request. Only one of them can be granted.",
+        "boardroom": "A statement of difficulty is not a request. Only a specific proposal can be granted."
+      },
+      "principle": {
+        "spicy": "Name the constraint, propose the trade, leave them something to say yes to.",
+        "boardroom": "Name the constraint, propose the trade-off, and leave a decision that can be approved."
+      }
+    },
+    "tags": ["baseline", "communication", "requests"],
+    "reviewed_by": null
+  },
+  {
+    "id": "b06",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "ACC": 0.6, "RES": 0.4 },
+    "prompt": {
+      "spicy": "Your mistake made it into something a client saw. You found it. Nobody else has.",
+      "boardroom": "An error you made reached a client-facing document. You identified it; nobody else has."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "Flag it now: what happened, what's affected, what you've already done about it",
+          "boardroom": "Raise it immediately: what occurred, what is affected, and the action already taken"
+        },
+        "consequence": {
+          "spicy": "Uncomfortable for four minutes. It's also the single fastest way to be trusted with bigger things.",
+          "boardroom": "Briefly uncomfortable, and the most reliable route to being trusted with more."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.6,
+        "label": {
+          "spicy": "Fix it, then flag it once the fix is in",
+          "boardroom": "Correct it, then raise it once the correction is in place"
+        },
+        "consequence": {
+          "spicy": "Defensible. The risk is the delay: if someone else finds it first, the story is now about the gap.",
+          "boardroom": "Defensible, but the delay carries risk. If discovered independently, the delay becomes the issue."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.3,
+        "label": {
+          "spicy": "Explain the process problem that made it likely",
+          "boardroom": "Explain the process weakness that contributed to it"
+        },
+        "consequence": {
+          "spicy": "The process point might be correct. Leading with it sounds like a defence lawyer opening a case.",
+          "boardroom": "The observation may be valid, but leading with it reads as deflection."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0,
+        "label": {
+          "spicy": "Say nothing. It might never come up",
+          "boardroom": "Take no action in the hope it is not identified"
+        },
+        "consequence": {
+          "spicy": "If it surfaces later — and it does — the mistake stops being the problem. You concealing it becomes the problem.",
+          "boardroom": "If it emerges later, the concealment rather than the error becomes the issue."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "Own the fact, not the identity. \"I got the figure wrong, here's the fix\" — not \"I'm so useless\".",
+        "boardroom": "Take responsibility for the fact, not through self-criticism. State the error and the remedy."
+      },
+      "principle": {
+        "spicy": "Accountability is naming your part without collapsing into it.",
+        "boardroom": "Accountability is naming your part without collapsing."
+      }
+    },
+    "tags": ["baseline", "accountability"],
+    "reviewed_by": null
+  },
+  {
+    "id": "b07",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "stretch",
+    "competency_weights": { "RES": 0.6, "AGY": 0.4 },
+    "prompt": {
+      "spicy": "Third week of genuinely dull work. Sleep is fine, health is fine, you're just bored and slightly resentful.",
+      "boardroom": "You are three weeks into genuinely dull work. Your health and sleep are fine; you are bored and somewhat resentful."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "Do it, and get better at doing it fast — then use the time you save",
+          "boardroom": "Complete it while improving your speed at it, and use the time recovered"
+        },
+        "consequence": {
+          "spicy": "Boring work is where the automation ideas live. Also where people notice who doesn't need chasing.",
+          "boardroom": "Routine work reveals improvement opportunities, and reliability on it is highly visible."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.6,
+        "label": {
+          "spicy": "Do it, and ask what you could take on next",
+          "boardroom": "Complete it and ask what you could take on next"
+        },
+        "consequence": {
+          "spicy": "Reasonable. Slightly risky if the current work isn't finished — you look like you're shopping.",
+          "boardroom": "Reasonable, though premature if current work is incomplete."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.3,
+        "label": {
+          "spicy": "Tell your manager you're not being challenged",
+          "boardroom": "Tell your manager you are not being sufficiently challenged"
+        },
+        "consequence": {
+          "spicy": "Three weeks in, this reads as \"I'd like the interesting bits without doing the boring bits\". Sometimes fair. Rarely lands.",
+          "boardroom": "At three weeks this reads as wanting the interesting work without the routine work."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.2,
+        "label": {
+          "spicy": "Slow down. Match the energy of the task",
+          "boardroom": "Reduce your pace in line with the interest level of the task"
+        },
+        "consequence": {
+          "spicy": "Boredom becomes visible as unreliability. Nobody can see the difference from outside.",
+          "boardroom": "From the outside, disengagement is indistinguishable from unreliability."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "Bored isn't distressed. Bored is most jobs, some of the time, and it's where capacity gets built.",
+        "boardroom": "Boredom is not distress. It is a normal component of most work and a place capacity is built."
+      },
+      "principle": {
+        "spicy": "Calibrate: is this hard, unpleasant, or actually harmful? Three different responses.",
+        "boardroom": "Calibrate whether something is difficult, unpleasant, or harmful. Each warrants a different response."
+      }
+    },
+    "tags": ["baseline", "stamina", "calibration"],
+    "reviewed_by": null
+  },
+  {
+    "id": "b08",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "stretch",
+    "competency_weights": { "RES": 0.5, "ACC": 0.25, "COM": 0.25 },
+    "prompt": {
+      "spicy": "You've been sleeping badly for a month, can't concentrate, and stopped doing the things you used to like. Deadline on Friday.",
+      "boardroom": "For the past month you have slept poorly, struggled to concentrate, and lost interest in things you previously enjoyed. There is a deadline on Friday."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "Book a doctor, and tell your manager what needs to move this week — not why",
+          "boardroom": "Arrange medical advice, and tell your manager what needs to move this week without disclosing the reason"
+        },
+        "consequence": {
+          "spicy": "A month of dropped functioning isn't a mindset problem and grit doesn't fix it. You also don't owe anyone the details.",
+          "boardroom": "A sustained drop in functioning is a clinical matter, not a motivational one. Detail is not owed to an employer."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.6,
+        "label": {
+          "spicy": "Tell your manager you need the deadline moved and sort the rest after",
+          "boardroom": "Ask for the deadline to move and address the rest afterwards"
+        },
+        "consequence": {
+          "spicy": "The immediate pressure comes off, which matters. The month-long part is still a month long.",
+          "boardroom": "Immediate pressure reduces, but the underlying issue remains unaddressed."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.2,
+        "label": {
+          "spicy": "Push through until Friday and reassess after",
+          "boardroom": "Continue until Friday and reassess afterwards"
+        },
+        "consequence": {
+          "spicy": "There is always another Friday. That's the mechanism by which this goes on for a year.",
+          "boardroom": "There is always a subsequent deadline, which is how such periods extend indefinitely."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.1,
+        "label": {
+          "spicy": "Read about productivity systems and try a new one",
+          "boardroom": "Adopt a new productivity system"
+        },
+        "consequence": {
+          "spicy": "You cannot out-system a month of not sleeping.",
+          "boardroom": "No system compensates for a month of impaired sleep and concentration."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "Discomfort is trainable. Functioning that dropped and stayed dropped is medical. Scoring high here means telling them apart — not pushing through.",
+        "boardroom": "Discomfort is trainable. A sustained drop in functioning is medical. Correctly distinguishing the two is the skill being measured."
+      },
+      "principle": {
+        "spicy": "Escalating genuine overload correctly is a high score, not a low one.",
+        "boardroom": "Correctly escalating genuine overload is a strong response, not a weak one."
+      }
+    },
+    "tags": ["baseline", "calibration", "capacity"],
+    "reviewed_by": null
+  },
+  {
+    "id": "b09",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "SOC": 0.7, "COM": 0.3 },
+    "prompt": {
+      "spicy": "In a meeting, you're mid-sentence and your manager says \"let's park that\" in a slightly flat voice. Two clients are on the call.",
+      "boardroom": "During a client call, your manager interrupts your point with \"let's park that\", in a notably flat tone."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "Stop immediately, move on, and raise it with them afterwards",
+          "boardroom": "Stop, move on, and follow up with them privately afterwards"
+        },
+        "consequence": {
+          "spicy": "\"Park that\" with clients present almost always means \"not in front of them\". You'll get the reason in private.",
+          "boardroom": "In client settings this usually signals a timing issue rather than a disagreement. The rationale follows privately."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.5,
+        "label": {
+          "spicy": "Finish the sentence briefly, then move on",
+          "boardroom": "Complete the point concisely, then move on"
+        },
+        "consequence": {
+          "spicy": "You get the point out. You also just told the clients there's a disagreement in the room.",
+          "boardroom": "The point is made, but it signals internal disagreement to the client."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.3,
+        "label": {
+          "spicy": "Ask why it's being parked",
+          "boardroom": "Ask why the point is being deferred"
+        },
+        "consequence": {
+          "spicy": "A completely fair question. Asked here, in front of clients, it becomes a scene.",
+          "boardroom": "A legitimate question, but asked in front of clients it becomes a visible disagreement."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.1,
+        "label": {
+          "spicy": "Go quiet for the rest of the call and think about it for four days",
+          "boardroom": "Withdraw for the remainder of the call and reflect on it at length"
+        },
+        "consequence": {
+          "spicy": "The clients notice. Your manager notices. Nobody knows what happened, including you, because you never asked.",
+          "boardroom": "The withdrawal is visible to everyone and the reason is never established, because it is never asked."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "Same words, different room, different meaning. Audience is part of the message.",
+        "boardroom": "The same words carry different meaning depending on who is present. Audience is part of the message."
+      },
+      "principle": {
+        "spicy": "Read who's in the room before you decide what was said.",
+        "boardroom": "Account for who is present before interpreting what was said."
+      }
+    },
+    "tags": ["baseline", "social"],
+    "reviewed_by": null
+  },
+  {
+    "id": "b10",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "EXE": 0.7, "ACC": 0.3 },
+    "prompt": {
+      "spicy": "You did the work and sent it three days ago. No reply. It's needed for something on Monday.",
+      "boardroom": "You completed and sent the work three days ago with no response. It is required for Monday."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "Follow up with a deadline in it: \"Assuming no changes, I'll send this on to Priya Friday 3pm\"",
+          "boardroom": "Follow up with a stated default: \"Unless I hear otherwise I will pass this to Priya at 3pm Friday\""
+        },
+        "consequence": {
+          "spicy": "Silence now means yes. You've closed the loop without needing them to do anything.",
+          "boardroom": "Silence becomes consent and the loop closes without requiring action from them."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.5,
+        "label": {
+          "spicy": "Send a polite nudge",
+          "boardroom": "Send a polite reminder"
+        },
+        "consequence": {
+          "spicy": "Might work. \"Just bumping this\" is a request for attention with no decision attached to it.",
+          "boardroom": "It may work, but a reminder without a proposed default requires them to initiate."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.3,
+        "label": {
+          "spicy": "It's sent. Your part is done",
+          "boardroom": "Consider your part complete, as it has been sent"
+        },
+        "consequence": {
+          "spicy": "Sending is activity. Monday is the outcome. Only one of those is your job.",
+          "boardroom": "Sending is activity; Monday is the outcome. The outcome is the responsibility."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.2,
+        "label": {
+          "spicy": "Escalate to their manager",
+          "boardroom": "Escalate to their manager"
+        },
+        "consequence": {
+          "spicy": "Effective exactly once, at a price. Three days and one follow-up doesn't earn it.",
+          "boardroom": "Effective but costly, and not warranted after three days and no follow-up."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "Closing the loop is the job. Sending the email is the beginning of the job.",
+        "boardroom": "Closing the loop is the work. Sending the email begins it."
+      },
+      "principle": {
+        "spicy": "Put a default in the follow-up so silence becomes an answer.",
+        "boardroom": "Include a default in the follow-up so that silence resolves it."
+      }
+    },
+    "tags": ["baseline", "execution"],
+    "reviewed_by": null
+  },
+  {
+    "id": "b11",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "stretch",
+    "competency_weights": { "JDG": 0.5, "AWR": 0.5 },
+    "prompt": {
+      "spicy": "You're certain the plan is wrong. You've said so once. It's been decided. You're still certain.",
+      "boardroom": "You believe the plan is wrong. You have said so once. The decision has been made and your view has not changed."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "Commit to it properly, and write down the specific thing you expect to go wrong and when",
+          "boardroom": "Commit fully, and record the specific failure you expect and its likely timing"
+        },
+        "consequence": {
+          "spicy": "You execute in good faith and you have a dated, specific note. That note is how you get listened to next time.",
+          "boardroom": "You execute in good faith while creating a specific, dated record. That record is what earns influence later."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.6,
+        "label": {
+          "spicy": "Ask for one more conversation with your reasoning written down",
+          "boardroom": "Request one further discussion, with your reasoning documented"
+        },
+        "consequence": {
+          "spicy": "Legitimate once. Twice and it stops being judgement and starts being a campaign.",
+          "boardroom": "Legitimate on one occasion. Repeated, it reads as relitigating rather than judgement."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.3,
+        "label": {
+          "spicy": "Do it, but slightly your way where nobody's checking",
+          "boardroom": "Implement it with unapproved modifications where they are unlikely to be noticed"
+        },
+        "consequence": {
+          "spicy": "Now the plan can't be evaluated, because it was never actually run. You've destroyed the evidence you needed.",
+          "boardroom": "The plan can no longer be assessed, because it was not implemented as agreed."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.1,
+        "label": {
+          "spicy": "Do it, and make sure people know you disagreed",
+          "boardroom": "Implement it while ensuring others know you objected"
+        },
+        "consequence": {
+          "spicy": "This is pre-building an alibi. Everyone can see it, and it costs you more than the failure would have.",
+          "boardroom": "This is visible pre-emptive distancing, and it costs more credibility than the outcome would."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "Being right isn't the same as being useful. Disagree, commit, and be specific about what you predicted.",
+        "boardroom": "Being correct is not the same as being useful. Disagree, commit, and record a specific prediction."
+      },
+      "principle": {
+        "spicy": "A dated, specific prediction is worth ten retrospective \"I said so\"s.",
+        "boardroom": "A specific, dated prediction carries far more weight than retrospective objection."
+      }
+    },
+    "tags": ["baseline", "judgement"],
+    "reviewed_by": null
+  },
+  {
+    "id": "b12",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "stretch",
+    "competency_weights": { "AGY": 0.4, "AWR": 0.3, "EXE": 0.3 },
+    "prompt": {
+      "spicy": "Six months in. Nobody has told you what \"good\" looks like in this role, and nobody is going to.",
+      "boardroom": "Six months into the role, no one has defined what good performance looks like, and no one is likely to."
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "Write your own version, take it to your manager, ask what's missing",
+          "boardroom": "Draft your own definition, take it to your manager, and ask what is missing"
+        },
+        "consequence": {
+          "spicy": "Editing someone's draft is easy. Producing one from nothing is not. You've made it easy for them to say yes.",
+          "boardroom": "Reviewing a draft is straightforward; producing one is not. This makes agreement easy."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.6,
+        "label": {
+          "spicy": "Ask your manager directly what good looks like",
+          "boardroom": "Ask your manager directly what good performance looks like"
+        },
+        "consequence": {
+          "spicy": "Fine, and often gets a vague answer, because they haven't written it down either.",
+          "boardroom": "Reasonable, though it frequently yields a general answer, as it is often undefined for them too."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.4,
+        "label": {
+          "spicy": "Copy whoever seems most respected around here",
+          "boardroom": "Model your approach on the most respected person in the team"
+        },
+        "consequence": {
+          "spicy": "Decent instinct, imperfect data. You're copying what's visible, which is rarely the part that matters.",
+          "boardroom": "A reasonable instinct based on incomplete information; visible behaviour is rarely the decisive part."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.2,
+        "label": {
+          "spicy": "Wait for the performance review to find out",
+          "boardroom": "Wait for the formal review to establish it"
+        },
+        "consequence": {
+          "spicy": "You'll find out what good looked like at the exact moment it's too late to have done it.",
+          "boardroom": "The standard becomes clear only when it is too late to have met it."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "Your role is being defined whether you're in the room or not. Bring a draft.",
+        "boardroom": "The role is being defined regardless of your involvement. Bring a draft."
+      },
+      "principle": {
+        "spicy": "Write the version you want reviewed. Blank pages get filled in by other people.",
+        "boardroom": "Produce the version you want reviewed; otherwise others will define it."
+      }
+    },
+    "tags": ["baseline", "trajectory"],
+    "reviewed_by": null
+  }
+]

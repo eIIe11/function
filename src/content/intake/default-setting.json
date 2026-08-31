@@ -1,0 +1,300 @@
+{
+  "settings": [
+    {
+      "number": 1,
+      "label": "Do it again, properly",
+      "body": {
+        "spicy": "Your instinct is to redo it to a standard nobody asked for. Often the right call. Occasionally you're polishing something that needed to be sent.",
+        "boardroom": "Your instinct is to raise the standard and redo the work. Frequently correct. Occasionally you refine something that simply needed to be sent."
+      }
+    },
+    {
+      "number": 2,
+      "label": "Ask who needs help",
+      "body": {
+        "spicy": "You turn outward. Very useful in a team, and a spectacular way to avoid your own inbox.",
+        "boardroom": "You turn outward and support others. Genuinely valuable, and occasionally a way of deferring your own work."
+      }
+    },
+    {
+      "number": 3,
+      "label": "Get it looking finished",
+      "body": {
+        "spicy": "You make it presentable fast. Brilliant under pressure. Risky when presentable and correct part ways.",
+        "boardroom": "You move quickly to something presentable. Strong under pressure, provided presentable and correct stay aligned."
+      }
+    },
+    {
+      "number": 4,
+      "label": "Feel it thoroughly, first",
+      "body": {
+        "spicy": "You process before you act. That's real information — as long as the processing has an exit.",
+        "boardroom": "You process before acting. That processing carries real information, provided it concludes."
+      }
+    },
+    {
+      "number": 5,
+      "label": "Go and read about it",
+      "body": {
+        "spicy": "You research. Excellent instinct, right up until reading becomes the thing you do instead of the task.",
+        "boardroom": "You research first. An excellent instinct, until reading substitutes for the task."
+      }
+    },
+    {
+      "number": 6,
+      "label": "Check with someone",
+      "body": {
+        "spicy": "You verify before committing. Saves rework. Also the easiest way to hand your judgement to someone else.",
+        "boardroom": "You verify before committing. This prevents rework, but can transfer your judgement to others."
+      }
+    },
+    {
+      "number": 7,
+      "label": "Change the subject",
+      "body": {
+        "spicy": "You move to something you can win at. Great for morale, terrible for the thing you moved away from.",
+        "boardroom": "You redirect towards work you can progress. Useful for momentum, unhelpful for the original problem."
+      }
+    },
+    {
+      "number": 8,
+      "label": "Take over",
+      "body": {
+        "spicy": "You grab the wheel. Things do get fixed. People also stop telling you things.",
+        "boardroom": "You take control. Problems get resolved, though others may stop raising them with you."
+      }
+    },
+    {
+      "number": 9,
+      "label": "Wait for it to resolve",
+      "body": {
+        "spicy": "You let it settle. Sometimes genuinely wise. Sometimes it's a decision made by not deciding.",
+        "boardroom": "You allow time to resolve it. Sometimes wise, sometimes a decision taken by default."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "d01",
+      "prompt": {
+        "spicy": "It's gone wrong. Nobody's watching yet. First move?",
+        "boardroom": "Something has gone wrong and nobody has noticed. What is your first move?"
+      },
+      "options": [
+        {
+          "setting": 1,
+          "label": {
+            "spicy": "Rebuild it properly before anyone sees",
+            "boardroom": "Rebuild it properly before it is reviewed"
+          }
+        },
+        {
+          "setting": 6,
+          "label": {
+            "spicy": "Check with someone whether it's actually a problem",
+            "boardroom": "Confirm with someone whether it is genuinely a problem"
+          }
+        },
+        {
+          "setting": 8,
+          "label": {
+            "spicy": "Take the whole thing over and drive it",
+            "boardroom": "Take ownership of it end to end"
+          }
+        },
+        {
+          "setting": 9,
+          "label": {
+            "spicy": "Leave it a day and see if it matters",
+            "boardroom": "Wait a day to see whether it remains material"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d02",
+      "prompt": {
+        "spicy": "You've been handed something you don't understand. Honestly, what happens next?",
+        "boardroom": "You have been handed something you do not understand. What actually happens next?"
+      },
+      "options": [
+        {
+          "setting": 5,
+          "label": {
+            "spicy": "Read everything about it first",
+            "boardroom": "Read around the subject first"
+          }
+        },
+        {
+          "setting": 6,
+          "label": {
+            "spicy": "Find the person who's done it before",
+            "boardroom": "Find the person who has done it before"
+          }
+        },
+        {
+          "setting": 3,
+          "label": {
+            "spicy": "Produce something that looks right and iterate",
+            "boardroom": "Produce a credible first version and iterate"
+          }
+        },
+        {
+          "setting": 7,
+          "label": {
+            "spicy": "Do three easier tasks first. For momentum. Allegedly",
+            "boardroom": "Complete easier tasks first to build momentum"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d03",
+      "prompt": {
+        "spicy": "Someone criticises your work in front of other people.",
+        "boardroom": "Your work is criticised in front of other people."
+      },
+      "options": [
+        {
+          "setting": 4,
+          "label": {
+            "spicy": "Sit with it for a while. Possibly four days",
+            "boardroom": "Sit with it before responding"
+          }
+        },
+        {
+          "setting": 1,
+          "label": {
+            "spicy": "Go and fix it to an unreasonable standard",
+            "boardroom": "Fix it to a notably high standard"
+          }
+        },
+        {
+          "setting": 8,
+          "label": {
+            "spicy": "Push back, right then",
+            "boardroom": "Address it directly in the moment"
+          }
+        },
+        {
+          "setting": 2,
+          "label": {
+            "spicy": "Check whether anyone else got hit too",
+            "boardroom": "Check whether others were affected as well"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d04",
+      "prompt": {
+        "spicy": "Deadline's tomorrow. It is not going to be good.",
+        "boardroom": "The deadline is tomorrow and the work will not be at standard."
+      },
+      "options": [
+        {
+          "setting": 3,
+          "label": {
+            "spicy": "Make the visible parts excellent",
+            "boardroom": "Ensure the visible elements are strong"
+          }
+        },
+        {
+          "setting": 1,
+          "label": {
+            "spicy": "Stay late and do it properly",
+            "boardroom": "Extend the hours and complete it properly"
+          }
+        },
+        {
+          "setting": 6,
+          "label": {
+            "spicy": "Tell someone now and ask what to drop",
+            "boardroom": "Raise it now and ask what should be dropped"
+          }
+        },
+        {
+          "setting": 9,
+          "label": {
+            "spicy": "Hand it in and hope the bar is low",
+            "boardroom": "Submit it and see whether it is accepted"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d05",
+      "prompt": {
+        "spicy": "A task has been sitting in your list for nine days.",
+        "boardroom": "A task has remained on your list for nine days."
+      },
+      "options": [
+        {
+          "setting": 7,
+          "label": {
+            "spicy": "It keeps getting overtaken by more interesting things",
+            "boardroom": "Other work keeps taking priority"
+          }
+        },
+        {
+          "setting": 5,
+          "label": {
+            "spicy": "I keep meaning to read up on it properly",
+            "boardroom": "I intend to research it properly first"
+          }
+        },
+        {
+          "setting": 4,
+          "label": {
+            "spicy": "Something about it makes me feel weird and I've been avoiding that",
+            "boardroom": "Something about it is uncomfortable and I have avoided it"
+          }
+        },
+        {
+          "setting": 2,
+          "label": {
+            "spicy": "I've been helping other people with theirs instead",
+            "boardroom": "I have been supporting others with their work instead"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d06",
+      "prompt": {
+        "spicy": "The team is visibly struggling and nobody's said it out loud.",
+        "boardroom": "The team is struggling and nobody has named it."
+      },
+      "options": [
+        {
+          "setting": 8,
+          "label": {
+            "spicy": "Step in and start directing",
+            "boardroom": "Step in and provide direction"
+          }
+        },
+        {
+          "setting": 2,
+          "label": {
+            "spicy": "Quietly ask people what they need",
+            "boardroom": "Ask individuals what they need"
+          }
+        },
+        {
+          "setting": 9,
+          "label": {
+            "spicy": "Assume someone more senior is on it",
+            "boardroom": "Assume it is being handled at a more senior level"
+          }
+        },
+        {
+          "setting": 3,
+          "label": {
+            "spicy": "Make sure my part looks under control",
+            "boardroom": "Ensure my own area is clearly under control"
+          }
+        }
+      ]
+    }
+  ]
+}

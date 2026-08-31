@@ -1,0 +1,735 @@
+[
+  {
+    "id": "w01-sim-01",
+    "title": {
+      "spicy": "The Monday Nobody Briefed You On",
+      "boardroom": "The Unbriefed Monday"
+    },
+    "setup": {
+      "spicy": "Monday, 8:55am. Your manager Dani is on a plane until Wednesday. In her last message on Friday, sent at 18:41, she wrote: \"Can you get the Renwick pack over to them before Weds? Mostly done, just needs the numbers finishing.\"\n\nYou open the pack. It is not mostly done. There are two tabs, one of which is called \"OLD DO NOT USE\", and the numbers do not agree with each other.",
+      "boardroom": "Monday, 8:55am. Your manager Dani is travelling until Wednesday. Her final message on Friday evening read: \"Can you get the Renwick pack over to them before Wednesday? Mostly done, just needs the numbers finishing.\"\n\nOn opening the pack, it is not substantially complete. There are two tabs, one labelled \"OLD DO NOT USE\", and the figures are inconsistent."
+    },
+    "context_docs": [
+      {
+        "id": "d1",
+        "kind": "chat",
+        "from": "Dani",
+        "title": "Friday, 18:41",
+        "body": {
+          "spicy": "Can you get the Renwick pack over to them before Weds? Mostly done, just needs the numbers finishing. On a plane til Weds, sorry! 🙏",
+          "boardroom": "Can you get the Renwick pack over to them before Wednesday? Mostly done, just needs the numbers finishing. I am travelling until Wednesday."
+        }
+      },
+      {
+        "id": "d2",
+        "kind": "email",
+        "from": "Renwick Partners",
+        "title": "Re: Q3 pack — timings",
+        "body": {
+          "spicy": "Hi both — as discussed, we'll need this by Wednesday to get it into the Thursday board papers. Doesn't need to be beautiful, needs to be right. Thanks, Elaine",
+          "boardroom": "As discussed, we require this by Wednesday for inclusion in Thursday's board papers. It does not need to be polished; it needs to be accurate. Regards, Elaine"
+        }
+      },
+      {
+        "id": "d3",
+        "kind": "doc",
+        "title": "Renwick pack — tab list",
+        "body": {
+          "spicy": "Tab 1: \"Q3 summary\" — last edited 6 weeks ago, by Marcus.\nTab 2: \"OLD DO NOT USE\" — last edited 4 days ago. By Dani.",
+          "boardroom": "Tab 1: Q3 summary — last edited six weeks ago by Marcus.\nTab 2: OLD DO NOT USE — last edited four days ago, by Dani."
+        }
+      }
+    ],
+    "entry": "n1",
+    "competency_weights": { "AGY": 0.4, "JDG": 0.3, "COM": 0.3 },
+    "nodes": {
+      "n1": {
+        "id": "n1",
+        "prompt": {
+          "spicy": "9:02am. Two tabs, contradictory numbers, and the tab marked DO NOT USE was edited more recently than the one you're supposed to use. First move?",
+          "boardroom": "9:02am. Two tabs with inconsistent figures, and the tab marked \"do not use\" was edited more recently than the one apparently in use. What is your first move?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "n2_informed",
+            "label": {
+              "spicy": "Check the edit history on both tabs to work out which numbers are newer, and who touched them",
+              "boardroom": "Review the edit history of both tabs to establish which figures are current and who changed them"
+            },
+            "consequence": {
+              "spicy": "Nine minutes. You now know Dani built tab 2 on Thursday and probably mislabelled it, and that Marcus owns the source data.",
+              "boardroom": "Nine minutes establishes that Dani produced tab 2 on Thursday and likely mislabelled it, and that Marcus owns the underlying data."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.6,
+            "next": "n2_informed",
+            "label": {
+              "spicy": "Message Marcus: \"Do you know which tab of the Renwick pack is live?\"",
+              "boardroom": "Ask Marcus which tab of the Renwick pack is current"
+            },
+            "consequence": {
+              "spicy": "Reasonable, and Marcus replies at 11:20 with \"ask Dani\". You've lost two hours you could've spent in the edit history.",
+              "boardroom": "Reasonable, though the reply arrives late morning and refers you back to Dani. Two hours are lost."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0.3,
+            "next": "n2_blind",
+            "label": {
+              "spicy": "Use tab 1, since tab 2 literally says DO NOT USE",
+              "boardroom": "Use tab 1, as tab 2 is explicitly marked not for use"
+            },
+            "consequence": {
+              "spicy": "Defensible on the label, wrong on the evidence. Tab 1 is six weeks stale. You're now building on old numbers.",
+              "boardroom": "Defensible by the label but not by the evidence. Tab 1 is six weeks old, so the work now rests on outdated figures."
+            }
+          },
+          {
+            "id": "d",
+            "quality": 0.1,
+            "next": "n2_blind",
+            "label": {
+              "spicy": "Email Dani and wait — she's the only one who knows",
+              "boardroom": "Email Dani and wait, as she has the necessary context"
+            },
+            "consequence": {
+              "spicy": "She lands Wednesday. The deadline is Wednesday. You've made a two-day plan out of a nine-minute question.",
+              "boardroom": "She returns on Wednesday, which is the deadline. A nine-minute question has become a two-day dependency."
+            }
+          }
+        ]
+      },
+      "n2_informed": {
+        "id": "n2_informed",
+        "prompt": {
+          "spicy": "10:15am. You're fairly sure tab 2 is the real one and the label is a leftover. \"Fairly sure\" is doing a lot of work in that sentence, and this is going in board papers. Next?",
+          "boardroom": "10:15am. You believe tab 2 is current and the label is an artefact, though this is not confirmed, and the pack is going into board papers. What next?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "n3_clean",
+            "label": {
+              "spicy": "Build on tab 2, and put a dated note at the top of the pack saying which tab you used and why",
+              "boardroom": "Proceed with tab 2 and add a dated note stating which tab was used and the reasoning"
+            },
+            "consequence": {
+              "spicy": "You've made a judgement call and made it visible. If it's wrong, it takes one minute to find and fix. This is the whole skill.",
+              "boardroom": "A judgement has been made and documented. If incorrect, it is trivial to locate and correct. This is the core skill."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.7,
+            "next": "n3_clean",
+            "label": {
+              "spicy": "Rebuild the numbers yourself from the source data so it doesn't matter which tab was right",
+              "boardroom": "Rebuild the figures from source data so the tab question becomes irrelevant"
+            },
+            "consequence": {
+              "spicy": "Genuinely thorough, and it eats four hours. Right call if you have the time. You have until Wednesday, so — just about.",
+              "boardroom": "Thorough, and it consumes approximately four hours. Justifiable given the Wednesday deadline, but only just."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0.4,
+            "next": "n3_messy",
+            "label": {
+              "spicy": "Build both versions so Dani can pick when she lands",
+              "boardroom": "Prepare both versions for Dani to choose from on her return"
+            },
+            "consequence": {
+              "spicy": "Twice the work, and you've handed the decision back to someone who won't be there until the deadline. Optionality isn't free.",
+              "boardroom": "This doubles the work and returns the decision to someone unavailable until the deadline."
+            }
+          },
+          {
+            "id": "d",
+            "quality": 0.2,
+            "next": "n3_messy",
+            "label": {
+              "spicy": "Rename tab 2 to \"CURRENT\" and crack on",
+              "boardroom": "Rename tab 2 as current and proceed"
+            },
+            "consequence": {
+              "spicy": "You've now edited the one piece of evidence about what was going on. Nobody can reconstruct the original state, including you.",
+              "boardroom": "You have altered the only record of the original state, which cannot now be reconstructed."
+            }
+          }
+        ]
+      },
+      "n2_blind": {
+        "id": "n2_blind",
+        "prompt": {
+          "spicy": "2:40pm. You've done three hours of work. Marcus walks past and says, casually, \"you're not using tab 1 are you? Those are the pre-restatement numbers.\"\n\nSo that's three hours.",
+          "boardroom": "2:40pm. After three hours of work, Marcus mentions in passing that tab 1 contains pre-restatement figures.\n\nThe three hours are lost."
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "n3_recovered",
+            "label": {
+              "spicy": "Stop immediately, ask Marcus which numbers are correct while he's standing there, and note what the three hours cost so you don't repeat it",
+              "boardroom": "Stop, ask Marcus directly which figures are correct while he is present, and record the cause of the lost time"
+            },
+            "consequence": {
+              "spicy": "Best available move. The three hours are gone; the information is standing in front of you and will not be there in five minutes.",
+              "boardroom": "The strongest available response. The time is unrecoverable, but the information is immediately available."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.5,
+            "next": "n3_recovered",
+            "label": {
+              "spicy": "Finish the section you're in first so the work isn't wasted, then switch",
+              "boardroom": "Complete the current section before switching, to avoid wasting the work"
+            },
+            "consequence": {
+              "spicy": "The work is already wasted — it's built on wrong numbers. Finishing it makes it more wasted, and Marcus has now left.",
+              "boardroom": "The work is already invalid, being based on incorrect figures. Continuing increases the loss, and Marcus is no longer available."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0.2,
+            "next": "n3_messy",
+            "label": {
+              "spicy": "Keep going. Add a caveat at the end saying the numbers may need checking",
+              "boardroom": "Continue and add a caveat that the figures may require verification"
+            },
+            "consequence": {
+              "spicy": "A caveat is not a fix. You've written \"this might be wrong\" on something going to a board, which is worse than late.",
+              "boardroom": "A caveat is not a remedy. Submitting material to a board flagged as potentially incorrect is worse than submitting it late."
+            }
+          }
+        ]
+      },
+      "n3_clean": {
+        "id": "n3_clean",
+        "prompt": {
+          "spicy": "Tuesday 4pm. The pack is done and it's right. One question left: Renwick expects it \"before Wednesday\", and Dani — who owns the relationship — lands Wednesday morning.",
+          "boardroom": "Tuesday, 4pm. The pack is complete and accurate. Renwick expects it before Wednesday; Dani, who owns the relationship, returns on Wednesday morning."
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "END",
+            "label": {
+              "spicy": "Send it to Dani now with a two-line summary of the tab decision, saying you'll send it to Renwick at 10am Wednesday unless she says otherwise",
+              "boardroom": "Send it to Dani now with a brief note on the tab decision, stating you will forward it to Renwick at 10am Wednesday unless directed otherwise"
+            },
+            "consequence": {
+              "spicy": "She can veto it from the airport in ten seconds, and if she doesn't, it still goes on time. Silence becomes a yes. This is the ending you want.",
+              "boardroom": "She can intervene quickly if needed, and otherwise it is delivered on schedule. Silence resolves as approval."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.7,
+            "next": "END",
+            "label": {
+              "spicy": "Send it straight to Renwick now — the deadline is the deadline",
+              "boardroom": "Send it directly to Renwick now, as the deadline requires"
+            },
+            "consequence": {
+              "spicy": "It's on time and it's correct, which counts for a lot. Dani finds out her client got a pack she hasn't seen, which counts for something too.",
+              "boardroom": "It is accurate and on time, which matters. However, Dani learns her client received material she had not reviewed."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0.4,
+            "next": "END",
+            "label": {
+              "spicy": "Wait for Dani Wednesday morning and send it together",
+              "boardroom": "Wait for Dani on Wednesday morning and send it jointly"
+            },
+            "consequence": {
+              "spicy": "Safe, and it converts a comfortable margin into a same-day scramble that depends on her flight landing on time.",
+              "boardroom": "Low-risk in one sense, but it removes the margin and makes delivery contingent on her travel."
+            }
+          },
+          {
+            "id": "d",
+            "quality": 0.2,
+            "next": "END",
+            "label": {
+              "spicy": "Send it to Dani and wait for her to tell you what to do",
+              "boardroom": "Send it to Dani and await instructions"
+            },
+            "consequence": {
+              "spicy": "You did all the hard work and then handed the last inch back. She now has a decision to make on a plane, about a deadline she can't see.",
+              "boardroom": "The substantive work is complete, but the final decision has been returned to someone with limited visibility."
+            }
+          }
+        ]
+      },
+      "n3_messy": {
+        "id": "n3_messy",
+        "prompt": {
+          "spicy": "Wednesday 9:30am. Dani lands, opens her phone, and finds a pack she can't interpret, a renamed tab, and no note about what you decided. Renwick emails at 9:45 asking where it is.",
+          "boardroom": "Wednesday, 9:30am. Dani returns to a pack she cannot readily interpret, a renamed tab, and no record of the decisions taken. Renwick asks for it at 9:45."
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "END",
+            "label": {
+              "spicy": "Send Dani a five-line summary right now: what you used, what you changed, what you're unsure about",
+              "boardroom": "Send Dani a concise summary immediately: what was used, what was changed, and what remains uncertain"
+            },
+            "consequence": {
+              "spicy": "Late, but recoverable in one message. The unsure part is the important bit — it's the difference between a delay and a bad surprise.",
+              "boardroom": "Late but recoverable in a single message. Stating the uncertainty is the critical element."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.4,
+            "next": "END",
+            "label": {
+              "spicy": "Reply to Renwick that it's coming this afternoon, then brief Dani",
+              "boardroom": "Confirm to Renwick that it will follow this afternoon, then brief Dani"
+            },
+            "consequence": {
+              "spicy": "You've committed her client to a time before she's seen the work. Reasonable instinct, wrong order.",
+              "boardroom": "This commits her client to a timeline before she has reviewed the work. The instinct is sound; the order is not."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0.1,
+            "next": "END",
+            "label": {
+              "spicy": "Wait for Dani to ask you about it",
+              "boardroom": "Wait for Dani to raise it"
+            },
+            "consequence": {
+              "spicy": "She will ask. It will be a different, worse conversation than the one you could have had at 9:31.",
+              "boardroom": "She will raise it, and the conversation will be materially worse than the one available at 9:31."
+            }
+          }
+        ]
+      },
+      "n3_recovered": {
+        "id": "n3_recovered",
+        "prompt": {
+          "spicy": "Tuesday 11am. Correct numbers, three hours behind, still deliverable by Wednesday if you don't lose any more time. Dani's still in the air.",
+          "boardroom": "Tuesday, 11am. The figures are now correct. You are three hours behind but can still deliver by Wednesday. Dani remains unavailable."
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "END",
+            "label": {
+              "spicy": "Carry on, and message Dani one line: \"Pack on track for Weds. Used the restated numbers — tab 2 was mislabelled.\"",
+              "boardroom": "Continue, and send Dani one line: the pack is on track for Wednesday, using the restated figures, as tab 2 was mislabelled"
+            },
+            "consequence": {
+              "spicy": "One sentence, sent before she asks. It costs you nothing and it's the reason she'll hand you the next one without checking.",
+              "boardroom": "A single unprompted sentence. It costs nothing and materially affects how the next piece of work is delegated."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.6,
+            "next": "END",
+            "label": {
+              "spicy": "Carry on quietly and tell her the full story Wednesday",
+              "boardroom": "Continue and provide the full account on Wednesday"
+            },
+            "consequence": {
+              "spicy": "The pack lands on time, which is what matters most. She learns about the mislabelling from you afterwards rather than during, which is slightly worse but survivable.",
+              "boardroom": "Delivery is unaffected, which is the priority. The mislabelling is reported after the fact rather than during, which is marginally less useful."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0.3,
+            "next": "END",
+            "label": {
+              "spicy": "Message her explaining the three lost hours and how it happened",
+              "boardroom": "Message her explaining the three hours lost and the cause"
+            },
+            "consequence": {
+              "spicy": "She's on a plane and cannot do anything with this. Save the post-mortem for when it's useful, which is after delivery.",
+              "boardroom": "She cannot act on this while travelling. The review is more useful after delivery."
+            }
+          }
+        ]
+      }
+    },
+    "principle": {
+      "spicy": "When the person with the answers is unavailable, your job is to make a defensible decision and leave a trail. Not to wait, and not to hide it.",
+      "boardroom": "When the person holding the context is unavailable, make a defensible decision and document it. Neither wait nor conceal it."
+    },
+    "reviewed_by": null
+  },
+  {
+    "id": "w01-sim-02",
+    "title": {
+      "spicy": "The File You Haven't Opened Since Thursday",
+      "boardroom": "The Deferred Task"
+    },
+    "setup": {
+      "spicy": "You were asked to write a one-page summary of a report for a partner meeting. That was Thursday. It is now Monday afternoon.\n\nYou have opened the report four times. You have read the first two pages four times. It's 47 pages, it's dense, and every time you open it you find something else to do.\n\nThe meeting is Wednesday morning.",
+      "boardroom": "On Thursday you were asked to produce a one-page summary of a report for a partner meeting. It is now Monday afternoon.\n\nYou have opened the report four times and read only the opening pages each time. It runs to 47 dense pages, and you have consistently found other work to do.\n\nThe meeting is on Wednesday morning."
+    },
+    "context_docs": [
+      {
+        "id": "d1",
+        "kind": "email",
+        "from": "Priya",
+        "title": "Thursday — Kestrel report",
+        "body": {
+          "spicy": "Can you do us a one-pager on the Kestrel report for Wednesday's partner meeting? Just the bits that matter to us. Ta!",
+          "boardroom": "Please prepare a one-page summary of the Kestrel report for Wednesday's partner meeting, covering the aspects relevant to us."
+        }
+      },
+      {
+        "id": "d2",
+        "kind": "doc",
+        "title": "Kestrel report — contents page",
+        "body": {
+          "spicy": "1. Executive summary (p3)\n2. Methodology (p6)\n3. Market sizing (p14)\n4. Competitive landscape (p22)\n5. Risks (p31)\n6. Recommendations (p39)\n7. Appendices (p42)",
+          "boardroom": "1. Executive summary (p3)\n2. Methodology (p6)\n3. Market sizing (p14)\n4. Competitive landscape (p22)\n5. Risks (p31)\n6. Recommendations (p39)\n7. Appendices (p42)"
+        }
+      }
+    ],
+    "entry": "n1",
+    "competency_weights": { "AGY": 0.4, "RES": 0.4, "EXE": 0.2 },
+    "nodes": {
+      "n1": {
+        "id": "n1",
+        "prompt": {
+          "spicy": "Monday, 2pm. Be honest about the actual first move — not the aspirational one.",
+          "boardroom": "Monday, 2pm. What is the realistic first move?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "n2_moving",
+            "label": {
+              "spicy": "Set a timer for ten minutes, read only the executive summary and the recommendations, and write three bullet points",
+              "boardroom": "Set a ten-minute limit, read only the executive summary and recommendations, and write three bullet points"
+            },
+            "consequence": {
+              "spicy": "Ten minutes later you have three bullets and the thing is 60% smaller than it was at 1:59pm. Nothing about the report changed.",
+              "boardroom": "Within ten minutes you have three usable points and the task is substantially reduced. The report itself has not changed."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.6,
+            "next": "n2_moving",
+            "label": {
+              "spicy": "Block out Tuesday morning to read the whole thing properly",
+              "boardroom": "Reserve Tuesday morning to read it in full"
+            },
+            "consequence": {
+              "spicy": "A real plan, which is more than you had. It also relies on Tuesday-morning-you being a different person, and gives you a whole afternoon to dread it in.",
+              "boardroom": "A genuine plan, though it depends on Tuesday proceeding as intended and leaves the task open for another day."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0.3,
+            "next": "n2_stalled",
+            "label": {
+              "spicy": "Ask Priya what specifically she wants in the one-pager",
+              "boardroom": "Ask Priya what specifically she requires in the summary"
+            },
+            "consequence": {
+              "spicy": "Not unreasonable — but it's Monday, you've had it since Thursday, and \"what do you want\" four days in reads as \"I haven't started\". Which is true.",
+              "boardroom": "Not unreasonable, but asking for scope four days after receiving it indicates the work has not begun."
+            }
+          },
+          {
+            "id": "d",
+            "quality": 0.1,
+            "next": "n2_stalled",
+            "label": {
+              "spicy": "Clear the smaller things off your list first so you can concentrate",
+              "boardroom": "Complete smaller items first in order to concentrate properly"
+            },
+            "consequence": {
+              "spicy": "You will feel productive and the report will remain unread. The list of smaller things is infinite; that's what it's for.",
+              "boardroom": "This produces a sense of progress while the report remains unread. Smaller items are effectively unlimited."
+            }
+          }
+        ]
+      },
+      "n2_moving": {
+        "id": "n2_moving",
+        "prompt": {
+          "spicy": "You've got three bullets and it turns out the recommendations section contradicts the market sizing. You are now genuinely, technically stuck on something real — not on your own dread.",
+          "boardroom": "You have three points, and the recommendations appear to contradict the market sizing section. You are now stuck on a substantive issue rather than avoidance."
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "n3_strong",
+            "label": {
+              "spicy": "Write the one-pager with the contradiction named as one of the three points",
+              "boardroom": "Produce the summary and include the contradiction as one of the three points"
+            },
+            "consequence": {
+              "spicy": "This is the best possible version of this task. You've turned \"I couldn't summarise it\" into \"the report doesn't hold together on p31 vs p14\", which is genuinely useful to a partner.",
+              "boardroom": "This is the strongest outcome. An inability to summarise becomes a substantive observation about an inconsistency in the report, which is directly useful."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.7,
+            "next": "n3_strong",
+            "label": {
+              "spicy": "Read the methodology section to work out which number is right, then write it up",
+              "boardroom": "Review the methodology to determine which figure is correct, then write it up"
+            },
+            "consequence": {
+              "spicy": "Thorough and correct, and it costs you 40 minutes on something a partner may well already know about. Not wrong, just expensive.",
+              "boardroom": "Thorough, and it costs approximately 40 minutes on a point the partner may already be aware of."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0.4,
+            "next": "n3_thin",
+            "label": {
+              "spicy": "Leave the contradiction out — it complicates a one-pager",
+              "boardroom": "Omit the contradiction, as it complicates a single-page summary"
+            },
+            "consequence": {
+              "spicy": "Now it's a tidy summary of a report that doesn't add up. Someone will find it in the meeting, and you'll have read the thing and not mentioned it.",
+              "boardroom": "The result is a clean summary of an inconsistent report. If identified in the meeting, it will be clear you reviewed it without flagging the issue."
+            }
+          }
+        ]
+      },
+      "n2_stalled": {
+        "id": "n2_stalled",
+        "prompt": {
+          "spicy": "Tuesday, 4:30pm. Still unread. The meeting is tomorrow at 9. This has now stopped being a reading problem.",
+          "boardroom": "Tuesday, 4:30pm. The report remains unread and the meeting is at 9am tomorrow. This is no longer a scheduling issue."
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "n3_recovered",
+            "label": {
+              "spicy": "Message Priya now: \"I'll have a one-pager for you by 8am. It'll cover the exec summary and recommendations — flag if you need the market sizing too.\"",
+              "boardroom": "Message Priya now: a one-page summary will be ready by 8am covering the executive summary and recommendations; ask whether market sizing is also required"
+            },
+            "consequence": {
+              "spicy": "You've scoped it down honestly, committed to a time, and given her a chance to correct you. Then you do the ten-minute version tonight.",
+              "boardroom": "The scope is honestly reduced, a time is committed, and she has an opportunity to adjust it. The work then proceeds this evening."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.6,
+            "next": "n3_recovered",
+            "label": {
+              "spicy": "Stay late and read the whole 47 pages properly tonight",
+              "boardroom": "Work late this evening and read the report in full"
+            },
+            "consequence": {
+              "spicy": "It'll get done, and at 11pm your judgement about what matters to a partner will be noticeably worse than it was at 2pm Monday.",
+              "boardroom": "It will be completed, though late-evening judgement about relevance is materially weaker."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0.2,
+            "next": "n3_thin",
+            "label": {
+              "spicy": "Skim it in the morning and improvise in the meeting",
+              "boardroom": "Skim it in the morning and respond in the meeting as required"
+            },
+            "consequence": {
+              "spicy": "Partners ask follow-up questions. That's the entire function of a partner in a meeting.",
+              "boardroom": "Partners ask follow-up questions; that is the purpose of their attendance."
+            }
+          },
+          {
+            "id": "d",
+            "quality": 0.1,
+            "next": "n3_thin",
+            "label": {
+              "spicy": "Tell Priya tomorrow morning you didn't get to it",
+              "boardroom": "Inform Priya tomorrow morning that it was not completed"
+            },
+            "consequence": {
+              "spicy": "Five days, one page, no warning. The lateness is forgivable; the fact she found out on the morning is the part that lands.",
+              "boardroom": "Five days for a single page with no advance notice. The delay is manageable; the absence of warning is not."
+            }
+          }
+        ]
+      },
+      "n3_strong": {
+        "id": "n3_strong",
+        "prompt": {
+          "spicy": "Tuesday, 11am. One page, three points, contradiction flagged. You have 22 hours spare. Now what?",
+          "boardroom": "Tuesday, 11am. One page, three points, inconsistency flagged. You have 22 hours in hand. What now?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "END",
+            "label": {
+              "spicy": "Send it to Priya now and ask if the framing is what she wanted",
+              "boardroom": "Send it to Priya now and confirm the framing is as intended"
+            },
+            "consequence": {
+              "spicy": "Time to fix it if it's wrong, and she goes into the meeting having already read it. This is the good ending.",
+              "boardroom": "There is time to revise if needed, and she reads it before the meeting. This is the strongest outcome."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.5,
+            "next": "END",
+            "label": {
+              "spicy": "Polish it more and send it tomorrow morning",
+              "boardroom": "Refine it further and send it tomorrow morning"
+            },
+            "consequence": {
+              "spicy": "It gets marginally better and arrives with no time for her to react. You traded a useful day for a slightly nicer page.",
+              "boardroom": "Marginal improvement, delivered with no opportunity for her to respond. A day of margin has been exchanged for minor polish."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0.6,
+            "next": "END",
+            "label": {
+              "spicy": "Read the risks section too, then send it this afternoon",
+              "boardroom": "Review the risks section as well, then send it this afternoon"
+            },
+            "consequence": {
+              "spicy": "Fair use of spare time, and still leaves her a reaction window. Slightly worse than sending now and adding a follow-up.",
+              "boardroom": "A reasonable use of available time that preserves a response window, though sending now with a follow-up is marginally stronger."
+            }
+          }
+        ]
+      },
+      "n3_thin": {
+        "id": "n3_thin",
+        "prompt": {
+          "spicy": "Wednesday, 9:20am. A partner asks: \"And does the market sizing support the recommendation?\" You have not read either section.",
+          "boardroom": "Wednesday, 9:20am. A partner asks whether the market sizing supports the recommendation. You have read neither section."
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "END",
+            "label": {
+              "spicy": "\"I haven't read the sizing section closely enough to answer that. I'll come back to you by lunchtime.\"",
+              "boardroom": "\"I have not reviewed the sizing section closely enough to answer. I will come back to you by lunchtime.\""
+            },
+            "consequence": {
+              "spicy": "Costs you four seconds of discomfort. Costs you nothing else, and you now have a specific task with a deadline you set yourself.",
+              "boardroom": "A brief moment of discomfort with no further cost, and it produces a specific task with a self-imposed deadline."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.3,
+            "next": "END",
+            "label": {
+              "spicy": "\"Broadly, yes — there are some assumptions in there worth revisiting.\"",
+              "boardroom": "\"Broadly yes, though some assumptions merit revisiting.\""
+            },
+            "consequence": {
+              "spicy": "Survives the room. Fails the follow-up question, which is arriving in about nine seconds.",
+              "boardroom": "It addresses the immediate question but will not withstand the follow-up."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0,
+            "next": "END",
+            "label": {
+              "spicy": "\"Yes, it does.\"",
+              "boardroom": "\"Yes, it does.\""
+            },
+            "consequence": {
+              "spicy": "You've just told a partner something you don't know, about a document that contradicts itself. This is how a small avoidance becomes a credibility problem.",
+              "boardroom": "You have asserted something unverified about a document containing an internal inconsistency. A minor avoidance has become a credibility issue."
+            }
+          }
+        ]
+      },
+      "n3_recovered": {
+        "id": "n3_recovered",
+        "prompt": {
+          "spicy": "Wednesday, 8:05am. The one-pager exists. It's thinner than the version you'd have written on Monday, and it's in her inbox before she's sat down. She replies: \"Thanks. Anything I should know before I walk in?\"",
+          "boardroom": "Wednesday, 8:05am. The summary is delivered before the meeting. It is less thorough than a Monday version would have been. Priya replies asking whether there is anything she should know beforehand."
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "next": "END",
+            "label": {
+              "spicy": "\"Two things: I've only covered the exec summary and recommendations, and p31 doesn't match the sizing on p14.\"",
+              "boardroom": "\"Two points: the summary covers only the executive summary and recommendations, and page 31 is inconsistent with the sizing on page 14.\""
+            },
+            "consequence": {
+              "spicy": "You've told her what's missing and given her something she can actually use in the room. Late start, recovered ending.",
+              "boardroom": "The gap is disclosed and a substantive observation is provided. A late start has been fully recovered."
+            }
+          },
+          {
+            "id": "b",
+            "quality": 0.5,
+            "next": "END",
+            "label": {
+              "spicy": "\"No, all good — it's all in the doc.\"",
+              "boardroom": "\"Nothing further; it is covered in the document.\""
+            },
+            "consequence": {
+              "spicy": "The page is fine. She walks in not knowing you skipped two sections, which she'll work out live rather than at her desk.",
+              "boardroom": "The summary is adequate, but she is unaware that two sections were omitted and will discover this during the meeting."
+            }
+          },
+          {
+            "id": "c",
+            "quality": 0.2,
+            "next": "END",
+            "label": {
+              "spicy": "Apologise again for the delay in three sentences",
+              "boardroom": "Send a further apology for the delay"
+            },
+            "consequence": {
+              "spicy": "She asked a question about the meeting. You answered a question about your feelings. The apology already landed the first time.",
+              "boardroom": "A question about the meeting has been answered with an apology already given. The substantive question remains unanswered."
+            }
+          }
+        ]
+      }
+    },
+    "principle": {
+      "spicy": "Avoidance makes the task feel bigger without changing the task. Ten minutes inside it is the only thing that reliably shrinks it.",
+      "boardroom": "Avoidance increases perceived difficulty without altering the task. Ten minutes of engagement is the most reliable correction."
+    },
+    "reviewed_by": null
+  }
+]

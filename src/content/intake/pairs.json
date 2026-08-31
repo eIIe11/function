@@ -1,0 +1,218 @@
+[
+  {
+    "id": "p01",
+    "axis": "approach",
+    "a": {
+      "letter": "M",
+      "label": {
+        "spicy": "I start, then find out if it was a good idea",
+        "boardroom": "I start, and correct course as I learn"
+      }
+    },
+    "b": {
+      "letter": "P",
+      "label": {
+        "spicy": "I need to see the whole thing before I touch it",
+        "boardroom": "I map the whole thing before I begin"
+      }
+    }
+  },
+  {
+    "id": "p02",
+    "axis": "approach",
+    "a": {
+      "letter": "M",
+      "label": {
+        "spicy": "A rough version today beats a perfect one on Friday",
+        "boardroom": "A rough draft today is worth more than a polished one on Friday"
+      }
+    },
+    "b": {
+      "letter": "P",
+      "label": {
+        "spicy": "Sending something half-finished makes me itch",
+        "boardroom": "I'd rather not circulate something unfinished"
+      }
+    }
+  },
+  {
+    "id": "p03",
+    "axis": "approach",
+    "a": {
+      "letter": "M",
+      "label": {
+        "spicy": "Plans are fiction until something's actually moving",
+        "boardroom": "Plans only become real once something is in motion"
+      }
+    },
+    "b": {
+      "letter": "P",
+      "label": {
+        "spicy": "Moving without a plan is just expensive guessing",
+        "boardroom": "Acting without a plan is expensive guessing"
+      }
+    }
+  },
+  {
+    "id": "p04",
+    "axis": "friction",
+    "a": {
+      "letter": "A",
+      "label": {
+        "spicy": "I'll have a proper go before I bother anyone",
+        "boardroom": "I attempt it properly before involving anyone"
+      }
+    },
+    "b": {
+      "letter": "E",
+      "label": {
+        "spicy": "Why guess when someone in this building already knows",
+        "boardroom": "I ask early rather than reinvent something known"
+      }
+    }
+  },
+  {
+    "id": "p05",
+    "axis": "friction",
+    "a": {
+      "letter": "A",
+      "label": {
+        "spicy": "Being stuck for an hour is part of it",
+        "boardroom": "An hour of being stuck is normal and useful"
+      }
+    },
+    "b": {
+      "letter": "E",
+      "label": {
+        "spicy": "An hour stuck is an hour I've wasted for everyone",
+        "boardroom": "An hour stuck is an hour the team has lost"
+      }
+    }
+  },
+  {
+    "id": "p06",
+    "axis": "friction",
+    "a": {
+      "letter": "A",
+      "label": {
+        "spicy": "I'd rather be wrong on my own than handheld",
+        "boardroom": "I would rather attempt it and be corrected"
+      }
+    },
+    "b": {
+      "letter": "E",
+      "label": {
+        "spicy": "I'd rather check than redo the whole thing",
+        "boardroom": "I would rather confirm than rework"
+      }
+    }
+  },
+  {
+    "id": "p07",
+    "axis": "register",
+    "a": {
+      "letter": "D",
+      "label": {
+        "spicy": "I say the thing. Bluntly. It saves everyone a week",
+        "boardroom": "I say the thing plainly. It saves time"
+      }
+    },
+    "b": {
+      "letter": "S",
+      "label": {
+        "spicy": "How I say it changes whether it lands at all",
+        "boardroom": "How it is framed determines whether it lands"
+      }
+    }
+  },
+  {
+    "id": "p08",
+    "axis": "register",
+    "a": {
+      "letter": "D",
+      "label": {
+        "spicy": "Softening bad news just makes it arrive twice",
+        "boardroom": "Softening bad news usually delays it"
+      }
+    },
+    "b": {
+      "letter": "S",
+      "label": {
+        "spicy": "I read the room before I open my mouth",
+        "boardroom": "I read the room before I speak"
+      }
+    }
+  },
+  {
+    "id": "p09",
+    "axis": "register",
+    "a": {
+      "letter": "D",
+      "label": {
+        "spicy": "If I disagree, you'll know in the meeting",
+        "boardroom": "If I disagree, I say so in the meeting"
+      }
+    },
+    "b": {
+      "letter": "S",
+      "label": {
+        "spicy": "If I disagree, I'll find the right moment",
+        "boardroom": "If I disagree, I choose the moment"
+      }
+    }
+  },
+  {
+    "id": "p10",
+    "axis": "completion",
+    "a": {
+      "letter": "F",
+      "label": {
+        "spicy": "The last 10% is the actual job",
+        "boardroom": "The final ten per cent is the job"
+      }
+    },
+    "b": {
+      "letter": "O",
+      "label": {
+        "spicy": "Once the hard part's solved, I'm mentally gone",
+        "boardroom": "Once the hard part is solved my attention moves on"
+      }
+    }
+  },
+  {
+    "id": "p11",
+    "axis": "completion",
+    "a": {
+      "letter": "F",
+      "label": {
+        "spicy": "I keep a mental list of loops still open",
+        "boardroom": "I keep track of what is still open"
+      }
+    },
+    "b": {
+      "letter": "O",
+      "label": {
+        "spicy": "I keep a mental list of things I could start",
+        "boardroom": "I keep track of what could be started"
+      }
+    }
+  },
+  {
+    "id": "p12",
+    "axis": "completion",
+    "a": {
+      "letter": "F",
+      "label": {
+        "spicy": "Finishing something boring still feels good",
+        "boardroom": "Finishing something dull is still satisfying"
+      }
+    },
+    "b": {
+      "letter": "O",
+      "label": {
+        "spicy": "A new idea is more interesting than a nearly-done one",
+        "boardroom": "A new idea holds more interest than a nearly-finished one"
+      }
+    }
+  }
+]
