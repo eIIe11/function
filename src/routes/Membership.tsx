@@ -5,6 +5,14 @@ import { formatAmount, plansFor } from "@/lib/payments/plans";
 import { requestPurchaseOrder, startCheckout } from "@/lib/payments/client";
 import type { Audience } from "@/lib/payments/types";
 
+/**
+ * The API writes its failure copy for the buyer, so it is shown verbatim. The
+ * fallback covers the case where the request never reached us at all.
+ */
+function messageFor(thrown: unknown, fallback: string): string {
+  return thrown instanceof Error && thrown.message ? thrown.message : fallback;
+}
+
 /** §14 Membership. Two audiences, two entirely different buying motions. */
 export default function Membership() {
   const [audience, setAudience] = useState<Audience>("individual");
@@ -68,10 +76,8 @@ function Individual() {
         reference: crypto.randomUUID(),
       });
       window.location.href = session.redirectUrl;
-    } catch {
-      setError(
-        "Checkout isn't connected yet — the payment provider is still being chosen. Nothing was charged.",
-      );
+    } catch (thrown) {
+      setError(messageFor(thrown, "Nothing was charged."));
       setPending(null);
     }
   }
@@ -157,9 +163,9 @@ function Corporate() {
         currency: "GBP",
       });
       setSent(result.reference);
-    } catch {
+    } catch (thrown) {
       setError(
-        "That didn't send — the backend isn't wired up yet. Email us and we'll raise the invoice by hand.",
+        messageFor(thrown, "That didn't send. Email us and we'll raise the invoice by hand."),
       );
     }
   }

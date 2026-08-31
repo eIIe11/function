@@ -11,7 +11,7 @@ the build is not blocked, and each default is cheap to change.
 | 4 | Voice and performance direction | Spicy is blunt-but-kind; boardroom is plain and unhedged | The whole content register; changing it later is a rewrite, not a config |
 | 5 | Support-resource territory | UK only, in `src/content/support-resources.json`, flagged unverified | Every entry must be verified by a human before launch; other countries needed before selling abroad |
 | 6 | B2B pricing model | Per-seat with volume bands, number withheld until quoted | `src/lib/payments/plans.ts` and the corporate page copy |
-| 7 | Individual payment provider | None wired. Checkout fails with an honest message | One adapter in `src/lib/payments/`, one env var. Recommendation: Lemon Squeezy or Paddle — merchant of record, so VAT is theirs, not yours |
+| 7 | Individual payment provider | ~~None wired~~ **Lemon Squeezy adapter built** (merchant of record, so VAT is theirs). Inactive until a store exists: `PAYMENT_PROVIDER` defaults to `invoice` and checkout refuses honestly | Creating the store and setting four env vars — see docs/DEPLOY.md step 4. Switching to Paddle or Polar is one new file in `netlify/lib/providers/` |
 | 8 | Individual price points | £149 full, £49 starter | `src/lib/payments/plans.ts` only |
 | 9 | Content review sign-off | Every item is `reviewed_by: null`; `CONTENT_REQUIRE_REVIEW=true` fails the build | Who signs off, and CI turning that flag on for production deploys |
 
@@ -28,3 +28,10 @@ the build is not blocked, and each default is cheap to change.
   records nothing.
 - **Corporate does not use card checkout.** Purchase order, invoice, bank
   transfer. It is how procurement buys and it avoids card fees on large deals.
+- **A payment path that isn't configured fails loudly.** Checkout returns 503 with
+  "nothing was charged", and the corporate form refuses rather than issuing a
+  reference for an enquiry no inbox will receive. Silence is the one outcome worth
+  engineering against.
+- **Fulfilment is not built yet.** The webhook verifies and normalises the payment
+  but grants nothing, because there is no database. Do not sell publicly until
+  that exists.

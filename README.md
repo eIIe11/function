@@ -13,7 +13,8 @@ Two sides, one engine:
 
 ```bash
 npm install
-npm run dev          # http://localhost:5173
+cp .env.example .env.local
+npm run dev          # http://localhost:5173, with /api/* served from netlify/functions
 ```
 
 ## Verify it
@@ -52,8 +53,11 @@ src/
     payments/     Provider-agnostic checkout. No provider is hard-wired
     sound.ts      Six synthesised UI cues. Muted until you tap something
   routes/         Fork, marketing, membership, intake, learn loop, tracker, profile
+netlify/
+  functions/      /api/checkout, /api/purchase-order, /api/payment-webhook
+  lib/providers/  One file per payment processor. Keys never leave this directory
 scripts/          Font fetch, brand asset generation, content validation, secret scan
-docs/             ENV.md, OPEN-DECISIONS.md
+docs/             ENV.md, DEPLOY.md, OPEN-DECISIONS.md
 ```
 
 ## Design rules that are not negotiable
@@ -69,6 +73,13 @@ docs/             ENV.md, OPEN-DECISIONS.md
   minimum control; every drag or swipe has a keyboard equivalent.
 - **LOUD outside, QUIET inside.** Marketing shouts. The learning surface never
   does — nobody wants a poster while they're being told they're wrong.
+
+## Deploying
+
+[docs/DEPLOY.md](docs/DEPLOY.md) is the runbook. Short version: Netlify picks up
+`netlify.toml` and needs no build configuration, the site works without any
+payment provider, and card checkout switches on with four environment variables
+once a Lemon Squeezy store exists.
 
 See [docs/OPEN-DECISIONS.md](docs/OPEN-DECISIONS.md) for what is deliberately
 still undecided.

@@ -40,7 +40,7 @@ function walk(dir) {
 
 const problems = [];
 
-for (const file of [...walk("src"), ...walk("scripts"), "index.html"]) {
+for (const file of [...walk("src"), ...walk("scripts"), ...walk("netlify"), "index.html"]) {
   const text = readFileSync(file, "utf8");
   for (const { name, re } of PATTERNS) {
     const match = re.exec(text);
@@ -56,6 +56,11 @@ for (const file of [...walk("src"), ...walk("scripts"), "index.html"]) {
         const line = text.slice(0, index).split("\n").length;
         problems.push(`${file}:${line} — server-only env var ${key} referenced in client code`);
       }
+    }
+    /* The functions may import from src (plans, types); the reverse would bundle
+       a provider adapter — and whatever it reads from process.env — into the app. */
+    if (/from\s+["'][^"']*netlify\//.test(text)) {
+      problems.push(`${file} — client code imports from netlify/`);
     }
   }
 }
