@@ -1,0 +1,73 @@
+{
+  "id": "w00-cold-open",
+  "type": "cold_open",
+  "scored": true,
+  "difficulty": "intro",
+  "competency_weights": { "INI": 0.6, "COM": 0.4 },
+  "prompt": {
+    "spicy": "No teaching yet. Answer honestly — we'll show you this again at the end.\n\n11:20am. You've been given a pricing model to update for a client meeting on Thursday. You've found the file, you understand the spreadsheet, and you can do the arithmetic. What you don't know is whether this client is on the standard discount or the renegotiated one, and the two produce very different numbers.\n\nYour manager is in back-to-backs until 4.\n\nWhat do you send her?",
+    "boardroom": "Nothing has been taught yet. Answer honestly — this will be revisited at the end of the unit.\n\n11:20am. You have been asked to update a pricing model for a client meeting on Thursday. You have located the file, understand its structure, and can complete the calculations. You do not know whether this client is on the standard discount or the renegotiated rate, and the two produce materially different outputs.\n\nYour manager is in meetings until 4pm.\n\nWhat do you send her?"
+  },
+  "options": [
+    {
+      "id": "a",
+      "quality": 1,
+      "label": {
+        "spicy": "\"Updating the pricing model now. I've built it on the standard discount, which puts the headline at £412k — the renegotiated rate would take it to £377k. Unless you say otherwise before 4 I'll go with standard and flag the assumption on the slide.\"",
+        "boardroom": "\"I am updating the pricing model on the standard discount, which produces a headline of £412k; the renegotiated rate would produce £377k. Absent a response before 4pm I will proceed on the standard basis and note the assumption on the slide.\""
+      },
+      "consequence": {
+        "spicy": "She reads that between meetings and replies with one word. You were never blocked, the work moved, and she now knows you understand what the number does.",
+        "boardroom": "This can be answered between meetings with a single word. The work was never blocked, and it demonstrates that you understand the implications of the figure."
+      }
+    },
+    {
+      "id": "b",
+      "quality": 0.6,
+      "label": {
+        "spicy": "\"Quick one — is Renwick on standard discount or the renegotiated rate?\"",
+        "boardroom": "\"Is this client on the standard discount or the renegotiated rate?\""
+      },
+      "consequence": {
+        "spicy": "Specific and answerable, which puts it well ahead of most. It just stops the work until she surfaces, and it doesn't show that you know why it matters.",
+        "boardroom": "Specific and answerable, which is better than most. It nonetheless halts progress until she responds, and does not convey that you understand why the distinction matters."
+      }
+    },
+    {
+      "id": "c",
+      "quality": 0.3,
+      "label": {
+        "spicy": "\"Hi — got a sec to talk me through the pricing model?\"",
+        "boardroom": "\"Do you have a moment to talk me through the pricing model?\""
+      },
+      "consequence": {
+        "spicy": "You've asked for an unknown amount of her time to answer a question you haven't stated. She'll assume you understand less than you do, because you've given her nothing that says otherwise.",
+        "boardroom": "This requests an undefined amount of time for an unstated question. It will be read as less understanding than you actually have, because nothing in it demonstrates otherwise."
+      }
+    },
+    {
+      "id": "d",
+      "quality": 0.1,
+      "label": {
+        "spicy": "Build it both ways and send both versions Thursday morning",
+        "boardroom": "Prepare both versions and present them on Thursday morning"
+      },
+      "consequence": {
+        "spicy": "Twice the work, and you've handed the decision back to her at the worst possible moment. Two numbers on a Thursday morning is not thoroughness, it's an unmade decision in a nicer outfit.",
+        "boardroom": "This doubles the work and returns the decision to her at the least convenient point. Presenting two figures on the morning of the meeting is an unresolved decision rather than thoroughness."
+      }
+    }
+  ],
+  "debrief": {
+    "verdict": {
+      "spicy": "Nothing to score yet. XP is for answering honestly, not for being right — we'll come back to this one.",
+      "boardroom": "No assessment yet. Credit is for answering rather than for being correct. This will be revisited."
+    },
+    "principle": {
+      "spicy": "Remember what you picked. You'll have a view on it in half an hour.",
+      "boardroom": "Note your answer. You are likely to view it differently by the end of the unit."
+    }
+  },
+  "tags": ["cold-open", "questions"],
+  "reviewed_by": null
+}

@@ -1,0 +1,64 @@
+{
+  "id": "w00-mess",
+  "type": "open_response",
+  "scored": true,
+  "difficulty": "stretch",
+  "competency_weights": { "COM": 0.4, "ACC": 0.3, "AWR": 0.3 },
+  "prompt": {
+    "spicy": "No best answer here. Write the actual message — we're grading the construction, not the decision.\n\nIt's Wednesday. You've been building a valuation summary for four days. This morning you realised you don't actually understand how the client makes money: there are two revenue lines and you've been treating them as the same thing, and you're now fairly sure they aren't. Everything you've built rests on that.\n\nThe person who briefed you is on holiday until Monday. The work is due Friday. You've already told your manager twice that it's \"going fine\".\n\nWrite what you send, to whom, right now.",
+    "boardroom": "There is no strongest answer. Write the actual message — the construction is assessed, not the decision.\n\nIt is Wednesday. You have spent four days building a valuation summary. This morning you recognised that you do not understand how the client generates revenue: there are two revenue lines you have treated as equivalent, and you now believe they are not. The work to date rests on that assumption.\n\nThe person who briefed you is on leave until Monday. The deliverable is due Friday. You have twice told your manager that progress is satisfactory.\n\nWrite what you send, and to whom, now."
+  },
+  "payload": {
+    "kind": "open_response",
+    "min_chars": 140,
+    "rubric": [
+      {
+        "criterion": "States the actual problem in one sentence",
+        "detail": {
+          "spicy": "Does the first line say what's wrong? \"I've treated the two revenue lines as one and I think that's wrong\" — not \"wanted to check something on the valuation\".",
+          "boardroom": "Does the opening line state the issue? \"I have treated the two revenue lines as equivalent and believe that is incorrect\" rather than a general request to discuss the valuation."
+        }
+      },
+      {
+        "criterion": "Quantifies what's at risk",
+        "detail": {
+          "spicy": "How much of the four days survives if you're right? \"The multiple and the summary change, the data work doesn't\" tells them the size of the fire. \"Might need to redo some bits\" doesn't.",
+          "boardroom": "How much of the work remains valid? Specifying which components change and which do not conveys the scale. A vague reference to revisions does not."
+        }
+      },
+      {
+        "criterion": "Owns the two \"going fine\" updates",
+        "detail": {
+          "spicy": "You said it was fine twice. One clause acknowledging that costs you nothing now and costs you a lot if they notice it themselves.",
+          "boardroom": "Two prior updates indicated satisfactory progress. Acknowledging that briefly is inexpensive now and considerably more costly if raised by others."
+        }
+      },
+      {
+        "criterion": "Proposes a route, not just a problem",
+        "detail": {
+          "spicy": "Who can answer this by Thursday morning? The client's own annual report, the sector lead, the person who briefed the last one of these. Bring a name or a source.",
+          "boardroom": "Identify who can resolve this by Thursday: published client material, the sector lead, or whoever briefed comparable work. Provide a specific route."
+        }
+      },
+      {
+        "criterion": "States what you'll do while you wait",
+        "detail": {
+          "spicy": "You are not stopping work to await instructions. \"I'll keep the data build going, which holds either way\" is what turns this from a confession into an update.",
+          "boardroom": "Work should not halt pending a response. Stating which components continue regardless converts the message from a disclosure into a progress update."
+        }
+      }
+    ]
+  },
+  "debrief": {
+    "verdict": {
+      "spicy": "The instinct is to soften it, and softening is what turns a Wednesday problem into a Friday one. The message that works is short, specific, slightly uncomfortable, and arrives with a route out.",
+      "boardroom": "The instinct is to soften the message, which is precisely what converts a Wednesday issue into a Friday one. An effective message is brief, specific, somewhat uncomfortable, and accompanied by a proposed route."
+    },
+    "principle": {
+      "spicy": "Bad news travels at the speed you send it. Same message, Wednesday or Friday — completely different conversation.",
+      "boardroom": "Adverse information should travel immediately. The identical message on Wednesday and on Friday produces entirely different conversations."
+    }
+  },
+  "tags": ["mess", "questions", "escalation"],
+  "reviewed_by": null
+}

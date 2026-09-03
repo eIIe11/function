@@ -1,0 +1,267 @@
+[
+  {
+    "id": "w00-sim-01",
+    "title": {
+      "spicy": "The Brief That Isn't a Brief",
+      "boardroom": "The Incomplete Brief"
+    },
+    "setup": {
+      "spicy": "Tuesday, 9:15am. A partner you've met twice, Priya, has messaged you directly: \"Can you put together a short view on whether Harlow should keep the Bristol site open? Board's Friday.\"\n\nThat's the entire brief. You have access to the client folder. Your manager Dani is at a client all day and has told you Priya's requests are real work, not favours.",
+      "boardroom": "Tuesday, 9:15am. Priya, a partner you have met twice, has messaged you directly: \"Can you put together a short view on whether Harlow should keep the Bristol site open? The board meets Friday.\"\n\nThat is the entire brief. You have access to the client folder. Your manager is with a client all day and has indicated that Priya's requests constitute genuine work."
+    },
+    "context_docs": [
+      {
+        "id": "d1",
+        "kind": "chat",
+        "from": "Priya (Partner)",
+        "title": "Tuesday, 9:15am",
+        "body": {
+          "spicy": "Can you put together a short view on whether Harlow should keep the Bristol site open? Board's Friday. Thanks!",
+          "boardroom": "Can you put together a short view on whether Harlow should keep the Bristol site open? The board meets on Friday."
+        }
+      },
+      {
+        "id": "d2",
+        "kind": "doc",
+        "title": "Client folder — Harlow",
+        "body": {
+          "spicy": "Site P&L by location (to July). A 2023 lease summary — Bristol lease breaks in 14 months. Headcount by site. A half-finished consolidation model from March, author unknown, with a tab called \"scenarios (v3 REAL)\".",
+          "boardroom": "Site-level P&L to July. A 2023 lease summary indicating the Bristol lease breaks in 14 months. Headcount by site. An incomplete consolidation model from March, author unrecorded, containing a tab labelled \"scenarios (v3 REAL)\"."
+        }
+      },
+      {
+        "id": "d3",
+        "kind": "email",
+        "from": "Dani (your manager)",
+        "title": "Monday, 18:02 — heads up",
+        "body": {
+          "spicy": "With Kestrel all day Tues, back Weds am. If Priya asks you for anything, treat it as real work — she asks juniors directly and she remembers who was useful.",
+          "boardroom": "I am with a client all day Tuesday and return Wednesday morning. If Priya makes a request, treat it as genuine work; she approaches juniors directly and notes who is effective."
+        }
+      }
+    ],
+    "entry": "n1",
+    "competency_weights": { "INI": 0.3, "COM": 0.3, "JDG": 0.2, "AWR": 0.2 },
+    "nodes": {
+      "n1": {
+        "id": "n1",
+        "prompt": {
+          "spicy": "9:20am. You have a one-line brief from a partner and four days. What's your first move?",
+          "boardroom": "9:20am. You hold a one-line brief from a partner and four days. What is your first move?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "label": {
+              "spicy": "Spend 40 minutes in the folder first, so any question you ask is one the folder can't answer",
+              "boardroom": "Spend 40 minutes reviewing the folder so that any question you raise is one the material cannot answer"
+            },
+            "consequence": {
+              "spicy": "You find the lease break in 14 months, which changes the entire question. Nobody told you that. You found it.",
+              "boardroom": "You identify the 14-month lease break, which reframes the question. This was not provided; you located it."
+            },
+            "next": "n2"
+          },
+          {
+            "id": "b",
+            "quality": 0.5,
+            "label": {
+              "spicy": "Reply immediately asking what she means by \"short view\"",
+              "boardroom": "Reply immediately requesting clarification of \"short view\""
+            },
+            "consequence": {
+              "spicy": "Fair question, wrong moment. You've asked before looking, so the answer you get is \"a page or two\" — which you could have guessed, and now you've used your first exchange on formatting.",
+              "boardroom": "A reasonable question raised prematurely. The response will be a general indication of length, and your first exchange has been spent on format."
+            },
+            "next": "n2_thin"
+          },
+          {
+            "id": "c",
+            "quality": 0.2,
+            "label": {
+              "spicy": "Start building the model — a partner asked, so speed is the signal",
+              "boardroom": "Begin building the model immediately, on the basis that responsiveness is what matters"
+            },
+            "consequence": {
+              "spicy": "You're four hours into a model that answers a question nobody asked. Speed without direction is just distance from the brief.",
+              "boardroom": "Four hours into a model addressing a question that was not asked. Pace without direction increases the distance from the brief."
+            },
+            "next": "n2_thin"
+          }
+        ]
+      },
+      "n2": {
+        "id": "n2",
+        "prompt": {
+          "spicy": "10:05am. The folder answers most of it — except one thing it can't: is this a cost decision or a people decision? Closing Bristol saves roughly £340k a year and moves 26 people. The two framings produce different recommendations.\n\nYou message Priya. Which one?",
+          "boardroom": "10:05am. The folder addresses most questions except one: is this a cost decision or a people decision? Closure saves approximately £340k annually and affects 26 staff. The two framings lead to different recommendations.\n\nYou message Priya. Which message?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "label": {
+              "spicy": "\"Lease breaks in 14 months so there's a natural decision point. Closing saves ~£340k/yr and moves 26 people. I'll write it as a cost case with the people impact quantified alongside — say if the board's actually deciding something else.\"",
+              "boardroom": "\"The lease breaks in 14 months, providing a natural decision point. Closure saves approximately £340k annually and affects 26 staff. I will frame it as a cost case with the people impact quantified alongside, unless the board is considering a different question.\""
+            },
+            "consequence": {
+              "spicy": "She replies in four minutes: \"Perfect — and add the 14-month point, the board doesn't know that.\" You've told a partner something she didn't know before lunch on day one.",
+              "boardroom": "She responds within minutes confirming the approach and asking you to include the lease break, which the board is unaware of. You have provided a partner with new information on the first day."
+            },
+            "next": "n3"
+          },
+          {
+            "id": "b",
+            "quality": 0.6,
+            "label": {
+              "spicy": "\"Is this primarily a cost decision or a people decision?\"",
+              "boardroom": "\"Is this principally a cost decision or a people decision?\""
+            },
+            "consequence": {
+              "spicy": "Genuinely the right question. Stripped of everything you found, though — she can't tell you've been in the folder, so she answers as if you haven't.",
+              "boardroom": "The correct question, but presented without your findings. She cannot tell that you have reviewed the material and will respond accordingly."
+            },
+            "next": "n3_thin"
+          },
+          {
+            "id": "c",
+            "quality": 0.3,
+            "label": {
+              "spicy": "Decide it's a cost decision — it's a partner, she'll want the number — and don't ask",
+              "boardroom": "Determine independently that it is a cost decision and proceed without asking"
+            },
+            "consequence": {
+              "spicy": "Might be right. But 26 people is the kind of thing a board asks about in the room, and you've made a framing choice invisibly.",
+              "boardroom": "Possibly correct. However, 26 staff is precisely what a board will question, and the framing decision has been made without visibility."
+            },
+            "next": "n3_thin"
+          }
+        ]
+      },
+      "n2_thin": {
+        "id": "n2_thin",
+        "prompt": {
+          "spicy": "11:40am. Priya's reply: \"Couple of pages is fine.\" You still don't know what the board is actually deciding, and you've now spent a morning. What now?",
+          "boardroom": "11:40am. Priya replies: \"Two pages is fine.\" The question the board is deciding remains unclear and the morning has gone. What now?"
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "label": {
+              "spicy": "Go into the folder properly now, then come back with one substantive message",
+              "boardroom": "Review the folder thoroughly, then return with a single substantive message"
+            },
+            "consequence": {
+              "spicy": "Recoverable. You lost a morning to a formatting question, and the second message is the one that counts.",
+              "boardroom": "Recoverable. A morning was spent on format; the second message carries the substance."
+            },
+            "next": "n2"
+          },
+          {
+            "id": "b",
+            "quality": 0.3,
+            "label": {
+              "spicy": "Write two pages on what you've got and hope the framing is right",
+              "boardroom": "Draft two pages from the available material and proceed on your assumed framing"
+            },
+            "consequence": {
+              "spicy": "You produce something confident and possibly irrelevant. Length was never the risk here.",
+              "boardroom": "The output is confident and possibly misdirected. Length was never the material risk."
+            },
+            "next": "n3_thin"
+          }
+        ]
+      },
+      "n3": {
+        "id": "n3",
+        "prompt": {
+          "spicy": "Thursday, 2pm. Draft's solid. But the March model's \"scenarios (v3 REAL)\" tab produces a saving of £290k, not £340k, and you can't tell which is right. Board is tomorrow.",
+          "boardroom": "Thursday, 2pm. The draft is sound. However, the March model's \"scenarios (v3 REAL)\" tab produces a saving of £290k rather than £340k, and the correct figure is unclear. The board meets tomorrow."
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 1,
+            "label": {
+              "spicy": "\"Two numbers in play: my £340k from the July P&L, £290k from the March model. Difference is the shared-services allocation. I've used mine and footnoted the other — flag if you'd rather lead with the conservative one.\"",
+              "boardroom": "\"There are two figures: £340k derived from the July P&L, and £290k from the March model. The difference is the shared-services allocation. I have used the former and footnoted the latter; advise if you would prefer the conservative figure.\""
+            },
+            "consequence": {
+              "spicy": "You found the reconciling item, chose, and made the choice visible. A partner can take that into a board meeting without fear.",
+              "boardroom": "You identified the reconciling item, made a choice, and disclosed it. This can be taken into a board meeting with confidence."
+            },
+            "next": "END"
+          },
+          {
+            "id": "b",
+            "quality": 0.5,
+            "label": {
+              "spicy": "Use your number and mention the discrepancy verbally when you hand it over",
+              "boardroom": "Use your figure and mention the discrepancy verbally on handover"
+            },
+            "consequence": {
+              "spicy": "Better than silence. But verbal doesn't survive a board pack being forwarded at 11pm.",
+              "boardroom": "Preferable to silence, though a verbal caveat does not survive the pack being circulated."
+            },
+            "next": "END"
+          },
+          {
+            "id": "c",
+            "quality": 0.1,
+            "label": {
+              "spicy": "Use the higher number — it makes the recommendation cleaner",
+              "boardroom": "Use the higher figure, as it produces a clearer recommendation"
+            },
+            "consequence": {
+              "spicy": "You chose the number that made your argument easier and told nobody. If the £290k surfaces in the room, the question is no longer about Bristol.",
+              "boardroom": "You selected the figure that strengthened your argument and disclosed nothing. If the £290k emerges in the meeting, the discussion is no longer about Bristol."
+            },
+            "next": "END"
+          }
+        ]
+      },
+      "n3_thin": {
+        "id": "n3_thin",
+        "prompt": {
+          "spicy": "Thursday, 4pm. Priya's read it: \"This is all cost — the board's worried about the Cardiff relocation precedent. Can you redo the people side tonight?\"\n\nThe framing question you didn't ask has arrived, twelve hours before the board.",
+          "boardroom": "Thursday, 4pm. Priya responds: \"This is entirely cost-focused. The board's concern is the precedent set by the Cardiff relocation. Can you revise the people dimension this evening?\"\n\nThe framing question you did not ask has surfaced twelve hours before the board meeting."
+        },
+        "options": [
+          {
+            "id": "a",
+            "quality": 0.8,
+            "label": {
+              "spicy": "\"On it. To make tonight work: I'll take the redeployment cost and the Cardiff comparison, and leave the retention modelling out unless you need it — that's the part I can't do well by 9am.\"",
+              "boardroom": "\"Understood. To deliver tonight I will cover redeployment cost and the Cardiff comparison, and omit retention modelling unless required — that is the element I cannot complete well by 9am.\""
+            },
+            "consequence": {
+              "spicy": "You've scoped the recovery instead of promising everything. Late, but honest about what late buys.",
+              "boardroom": "You have scoped the recovery rather than committing to everything. Late, but candid about what is achievable."
+            },
+            "next": "END"
+          },
+          {
+            "id": "b",
+            "quality": 0.4,
+            "label": {
+              "spicy": "\"Yes, all of it, no problem\" — then work until 2am",
+              "boardroom": "Agree to the full scope and work through the night"
+            },
+            "consequence": {
+              "spicy": "You'll deliver something at 3am that nobody has checked, on the topic the board actually cares about. Heroic, and the wrong risk to take.",
+              "boardroom": "You will deliver unchecked work in the early hours on the topic of greatest board interest. Committed, but a poorly chosen risk."
+            },
+            "next": "END"
+          }
+        ]
+      }
+    },
+    "principle": {
+      "spicy": "The question you don't ask on Tuesday arrives on Thursday, at four, with less time and more people watching.",
+      "boardroom": "The question not raised on Tuesday resurfaces on Thursday afternoon, with less time available and a wider audience."
+    },
+    "reviewed_by": null
+  }
+]
