@@ -1,9 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { fileURLToPath, URL } from "node:url";
+import { devApi } from "./scripts/vite-api-plugin";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), devApi()],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
@@ -26,6 +27,6 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     setupFiles: ["./src/test/setup.ts"],
-    include: ["src/**/*.test.{ts,tsx}", "scripts/**/*.test.ts"],
+    include: ["src/**/*.test.{ts,tsx}", "scripts/**/*.test.ts", "netlify/**/*.test.ts"],
   },
 });

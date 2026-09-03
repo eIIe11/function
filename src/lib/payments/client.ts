@@ -11,9 +11,22 @@ export async function startCheckout(request: CheckoutRequest): Promise<CheckoutS
     body: JSON.stringify(request),
   });
   if (!response.ok) {
-    throw new Error(`Checkout failed (${response.status})`);
+    throw new Error(await messageFrom(response));
   }
   return (await response.json()) as CheckoutSession;
+}
+
+/**
+ * The functions return `{ error }` with copy written for the buyer, so it is
+ * shown as-is. A status code on its own tells them nothing they can act on.
+ */
+async function messageFrom(response: Response): Promise<string> {
+  const body = (await response.json().catch(() => null)) as { error?: string } | null;
+  if (body?.error) return body.error;
+  if (response.status === 404) {
+    return "Checkout isn't deployed yet. Nothing was charged.";
+  }
+  return "Something went wrong. Nothing was charged.";
 }
 
 export type PurchaseOrderRequest = Omit<PurchaseOrder, "reference" | "status" | "amount"> & {
@@ -30,7 +43,7 @@ export async function requestPurchaseOrder(
     body: JSON.stringify(request),
   });
   if (!response.ok) {
-    throw new Error(`Could not submit the request (${response.status})`);
+    throw new Error(await messageFrom(response));
   }
   return (await response.json()) as { reference: string };
 }

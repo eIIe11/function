@@ -19,7 +19,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["scripts/**/*.{mjs,ts}", "vite.config.ts"],
+      files: ["scripts/**/*.{mjs,ts}", "netlify/**/*.ts", "vite.config.ts"],
       env: { node: true, browser: false },
       rules: { "no-console": "off" },
     },
