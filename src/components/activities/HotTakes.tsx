@@ -120,23 +120,32 @@ export function HotTakes({ item, bite, onComplete, xpGained }: Props) {
 
       {nuance ? (
         <div className="q-card mt-4 border-l-4 p-4" style={{ borderColor: nuance.right ? "var(--acid)" : "var(--tangerine)" }} aria-live="polite">
-          <p className="label">
-            You said {nuance.agreed ? "agree" : "disagree"}
-            {nuance.right ? " — that holds up" : " — with a caveat"}
+          <p className="font-display text-lg font-extrabold">
+            {nuance.right ? "You got it" : "Not this one"}
           </p>
-          <p className="mt-2 text-md">{nuance.text}</p>
+          <p className="label mt-1">
+            You said {nuance.agreed ? "agree" : "disagree"} — the stronger answer was{" "}
+            {card.agree_is_stronger ? "agree" : "disagree"}
+          </p>
+          <p className="label mt-3">Why</p>
+          <p className="mt-1 text-md">{nuance.text}</p>
           <div className="mt-4 flex justify-end">
             <Button onClick={next}>Next card</Button>
           </div>
         </div>
       ) : (
         <div className="mt-4 grid grid-cols-2 gap-3">
-          <Button variant="quiet" size="lg" onClick={() => answer(false)}>
-            Disagree
-          </Button>
-          <Button size="lg" onClick={() => answer(true)}>
-            Agree
-          </Button>
+          {[false, true].map((agreed) => (
+            <Button
+              key={String(agreed)}
+              variant="quiet"
+              size="lg"
+              className="border-[3px] border-ink shadow-loud-sm active:translate-x-[2px] active:translate-y-[2px] active:shadow-loud-press"
+              onClick={() => answer(agreed)}
+            >
+              {agreed ? "Agree" : "Disagree"}
+            </Button>
+          ))}
         </div>
       )}
     </div>

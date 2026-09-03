@@ -20,8 +20,8 @@
           },
           "agree_is_stronger": false,
           "nuance": {
-            "spicy": "Wrong, but not for the reason people say. Questions don't make you look incompetent — *unattempted* questions do. \"How do I start this?\" and \"I've built the first tab, is this the right structure?\" land completely differently, and only one of them shows your working.",
-            "boardroom": "Incorrect, though with a caveat. Questions do not damage credibility; unattempted questions do. \"How do I begin?\" and \"I have drafted the structure, is this correct?\" are received very differently."
+            "spicy": "The distinction people miss: questions don't cost you anything, *unattempted* questions do. \"How do I start this?\" and \"I've built the first tab, is this the right structure?\" land completely differently, and only one of them shows your working.",
+            "boardroom": "The distinction sits elsewhere. Questions do not damage credibility; unattempted questions do. \"How do I begin?\" and \"I have drafted the structure, is this correct?\" are received very differently."
           }
         },
         {
@@ -44,8 +44,8 @@
           },
           "agree_is_stronger": true,
           "nuance": {
-            "spicy": "Usually true, with one hard exception: anything irreversible, anything that touches a client or money, and anything involving safety. Those you check first. Everything else, move.",
-            "boardroom": "Generally true, with clear exceptions: irreversible actions, anything client- or finance-facing, and anything with a safety dimension should be confirmed first."
+            "spicy": "One hard exception decides this: anything irreversible, anything that touches a client or money, and anything involving safety. Those you check first. Everything else, move.",
+            "boardroom": "The exceptions decide this: irreversible actions, anything client- or finance-facing, and anything with a safety dimension should be confirmed first."
           }
         },
         {
@@ -56,8 +56,8 @@
           },
           "agree_is_stronger": false,
           "nuance": {
-            "spicy": "Backwards. Confidence is downstream of having done it, badly, twice. Bandura called it mastery experience. Waiting to feel ready is waiting for an effect to arrive before its cause.",
-            "boardroom": "This inverts the relationship. Confidence follows completed attempts — what Bandura termed mastery experience. Waiting to feel ready is waiting for the effect before the cause."
+            "spicy": "Confidence is downstream of having done it, badly, twice. Bandura called it mastery experience. Waiting to feel ready is waiting for an effect to arrive before its cause.",
+            "boardroom": "The relationship runs the other way. Confidence follows completed attempts — what Bandura termed mastery experience. Waiting to feel ready is waiting for the effect before the cause."
           }
         },
         {
@@ -68,8 +68,8 @@
           },
           "agree_is_stronger": true,
           "nuance": {
-            "spicy": "Correct, and this is the part people skip when they hear \"agency\". Handing something back to the right owner, clearly and early, is agency. Silently absorbing everything is just a slower kind of passivity.",
-            "boardroom": "Correct, and frequently overlooked. Returning a problem to its correct owner promptly and clearly is itself agency. Absorbing everything is a slower form of passivity."
+            "spicy": "This is the part people skip when they hear \"agency\". Handing something back to the right owner, clearly and early, is agency. Silently absorbing everything is just a slower kind of passivity.",
+            "boardroom": "This is frequently overlooked. Returning a problem to its correct owner promptly and clearly is itself agency. Absorbing everything is a slower form of passivity."
           }
         },
         {
