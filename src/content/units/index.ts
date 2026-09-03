@@ -1,4 +1,10 @@
 import { UnitVarietySchema, type Unit } from "../schema";
+import w00Meta from "./w00-questions/unit.json";
+import w00ColdOpen from "./w00-questions/00-cold-open.json";
+import w00Recognise from "./w00-questions/03-recognise.json";
+import w00Simulator from "./w00-questions/04-simulator.json";
+import w00Mess from "./w00-questions/05-mess.json";
+import w00BuildIt from "./w00-questions/06-build-it.json";
 import w01Meta from "./w01-agency/unit.json";
 import w01ColdOpen from "./w01-agency/00-cold-open.json";
 import w01Recognise from "./w01-agency/03-recognise.json";
@@ -25,6 +31,13 @@ function compose(
 }
 
 export const units: Unit[] = [
+  compose(w00Meta, {
+    cold_open: w00ColdOpen,
+    recognise: w00Recognise,
+    simulator: w00Simulator,
+    mess: w00Mess,
+    build_it: w00BuildIt,
+  }),
   compose(w01Meta, {
     cold_open: w01ColdOpen,
     recognise: w01Recognise,

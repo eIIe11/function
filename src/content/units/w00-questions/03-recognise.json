@@ -1,0 +1,357 @@
+[
+  {
+    "id": "w00-r01",
+    "type": "triage",
+    "scored": true,
+    "difficulty": "intro",
+    "competency_weights": { "INI": 0.4, "JDG": 0.4, "RSC": 0.2 },
+    "prompt": {
+      "spicy": "Six stuck moments. Name the gap in each one — because the gap decides whether it's your problem or theirs.",
+      "boardroom": "Six blockages. Identify the gap in each, since the type of gap determines whether it is yours to resolve or theirs."
+    },
+    "payload": {
+      "kind": "triage",
+      "buckets": [
+        { "id": "goal", "label": "Goal" },
+        { "id": "method", "label": "Method" },
+        { "id": "constraint", "label": "Constraint" },
+        { "id": "decision", "label": "Decision" }
+      ],
+      "demands": [
+        {
+          "id": "g1",
+          "label": {
+            "spicy": "\"Can you look at the churn numbers\" — you don't know if they want a chart, a view, or a recommendation",
+            "boardroom": "\"Can you review the churn figures\" — it is unclear whether a chart, an assessment or a recommendation is expected"
+          },
+          "correct_bucket": "goal",
+          "reason": {
+            "spicy": "You don't know what done looks like. Nobody can work that out from the file — it's a thirty-second answer that only exists in their head, so it's a fair thing to ask.",
+            "boardroom": "The definition of completion is unknown and cannot be derived from the material. It is held only by the requester, so asking is appropriate."
+          }
+        },
+        {
+          "id": "g2",
+          "label": {
+            "spicy": "You need to combine two datasets and you've never used a lookup formula",
+            "boardroom": "You need to merge two datasets and have not previously used a lookup function"
+          },
+          "correct_bucket": "method",
+          "reason": {
+            "spicy": "Findable in ten minutes by anyone, including you. Asking a colleague to teach you this is spending their time on something the internet does for free and faster.",
+            "boardroom": "This is resolvable independently within minutes. Requesting instruction spends a colleague's time on something readily available elsewhere."
+          }
+        },
+        {
+          "id": "g3",
+          "label": {
+            "spicy": "The deck needs sign-off before it leaves the building and you don't know who signs",
+            "boardroom": "The document requires approval before external release and the approver is unknown"
+          },
+          "correct_bucket": "constraint",
+          "reason": {
+            "spicy": "A rule exists and you can't see it. Look for it once — old email threads, the wiki — then ask precisely: \"who signs off client-facing decks, is it Dani or does it need legal?\"",
+            "boardroom": "A rule exists but is not visible to you. Search once — previous correspondence, internal documentation — then ask precisely who approves client-facing material."
+          }
+        },
+        {
+          "id": "g4",
+          "label": {
+            "spicy": "Two defensible ways to present a bad result. One protects the relationship, one is more transparent",
+            "boardroom": "Two defensible presentations of an unfavourable result: one protects the relationship, one is more transparent"
+          },
+          "correct_bucket": "decision",
+          "reason": {
+            "spicy": "This is the one people sit on. You don't have the authority or the client history to pick — and if you pick silently and it's the wrong call, the silence is the part that gets remembered.",
+            "boardroom": "This is frequently left unresolved. You hold neither the authority nor the client history to choose, and an unflagged choice is the element that will be scrutinised later."
+          }
+        },
+        {
+          "id": "g5",
+          "label": {
+            "spicy": "The export keeps failing with an error code you've never seen",
+            "boardroom": "The export fails with an unfamiliar error code"
+          },
+          "correct_bucket": "method",
+          "reason": {
+            "spicy": "Paste the exact error into search first. If it's still failing after ten minutes, it upgrades — you then ask with the error text and what you already ruled out.",
+            "boardroom": "Search the exact error text first. If unresolved after ten minutes, escalate with the error text and the steps already eliminated."
+          }
+        },
+        {
+          "id": "g6",
+          "label": {
+            "spicy": "You genuinely don't understand what the client's business does, and you're writing their strategy summary",
+            "boardroom": "You do not understand the client's business model and are drafting their strategy summary"
+          },
+          "correct_bucket": "goal",
+          "reason": {
+            "spicy": "Not a method gap and not a clarification. You can't judge whether your own output is right, which means this is a scope conversation — say so now, in plain words, rather than producing something confident and hollow.",
+            "boardroom": "This is neither a method gap nor a clarification. You cannot evaluate your own output, which makes it a scope conversation. Raise it directly rather than producing confident but unfounded work."
+          }
+        }
+      ]
+    },
+    "debrief": {
+      "verdict": {
+        "spicy": "Two were yours to solve, two were theirs, one was a rule you could half-find, and one wasn't a question at all. Most people over-ask on method and under-ask on decisions.",
+        "boardroom": "Two were yours to resolve, two were theirs, one was a partially documented rule, and one was not a question at all. The common pattern is over-asking on method and under-asking on decisions."
+      },
+      "principle": {
+        "spicy": "Name the gap before you open your mouth. Method is yours. Decisions are theirs. Goal is cheap to ask and expensive to guess.",
+        "boardroom": "Identify the gap before asking. Method is yours; decisions are theirs; the goal is inexpensive to confirm and costly to assume."
+      }
+    },
+    "tags": ["recognise", "questions", "gap-types"],
+    "reviewed_by": null
+  },
+  {
+    "id": "w00-r02",
+    "type": "mcq_weighted",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "COM": 0.5, "INI": 0.3, "JDG": 0.2 },
+    "prompt": {
+      "spicy": "Same gap, five ways of asking. You're mid-way through a competitor analysis and you've realised the brief says \"top five competitors\" but the client's own deck lists eight, three of which are in a different market.\n\nWhich message do you send?",
+      "boardroom": "One gap, five phrasings. You are part-way through a competitor analysis and have noticed the brief specifies the top five competitors while the client's own material lists eight, three of which operate in a different market.\n\nWhich message do you send?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "quality": 1,
+        "label": {
+          "spicy": "\"Brief says top five, client's deck lists eight — three of those are in adjacent markets so I've read the five as UK-market only, which is the comparison that makes their positioning argument work. Building it that way; shout if you meant all eight.\"",
+          "boardroom": "\"The brief specifies five competitors; the client's material lists eight, three of which operate in adjacent markets. I have interpreted the five as UK-market only, which supports their positioning argument, and am proceeding on that basis unless you intended all eight.\""
+        },
+        "consequence": {
+          "spicy": "You spotted the discrepancy, worked out *why* it exists, made the call the analysis needs, and gave them a one-word exit. This is what senior looks like in writing.",
+          "boardroom": "You identified the inconsistency, established its likely cause, made the judgement the analysis requires, and left a single-word correction available. This reads as experienced."
+        }
+      },
+      {
+        "id": "b",
+        "quality": 0.7,
+        "label": {
+          "spicy": "\"Brief says five competitors, their deck says eight — which do you want me to use?\"",
+          "boardroom": "\"The brief specifies five competitors and the client's material lists eight. Which should I use?\""
+        },
+        "consequence": {
+          "spicy": "Genuinely fine. You caught a real inconsistency and asked precisely. It just hands the thinking back — you'd noticed the market difference and didn't say so.",
+          "boardroom": "Perfectly acceptable. You identified a real inconsistency and asked precisely, but returned the analysis to them without noting the market distinction you had already observed."
+        }
+      },
+      {
+        "id": "c",
+        "quality": 0.4,
+        "label": {
+          "spicy": "\"Just to check — are we doing five or eight?\"",
+          "boardroom": "\"To confirm, is this five or eight?\""
+        },
+        "consequence": {
+          "spicy": "Answerable, but stripped of everything you know. They can't tell whether you've read the client deck or just counted rows, so they'll re-explain the brief to you.",
+          "boardroom": "Answerable, but conveys none of your analysis. It is unclear whether you have read the client material, so the brief will likely be re-explained to you."
+        }
+      },
+      {
+        "id": "d",
+        "quality": 0.2,
+        "label": {
+          "spicy": "\"Sorry to bother you! Really stupid question but I'm a bit confused about the competitor bit — no rush at all!\"",
+          "boardroom": "\"Apologies for the interruption — a minor question about the competitor section, whenever convenient.\""
+        },
+        "consequence": {
+          "spicy": "Three apologies, no question. They now have to extract the actual issue from you, which costs more of their time than the thing you were trying not to cost them.",
+          "boardroom": "Apologetic framing with no stated question. The issue must now be drawn out of you, which consumes more of their time than a direct question would have."
+        }
+      },
+      {
+        "id": "e",
+        "quality": 0.1,
+        "label": {
+          "spicy": "Say nothing, use five, and mention the discrepancy in the meeting if it comes up",
+          "boardroom": "Say nothing, proceed with five, and raise the discrepancy in the meeting if relevant"
+        },
+        "consequence": {
+          "spicy": "You found a flaw in the brief and sat on it. If the client asks about the missing three in the room, the person presenting finds out at the same time they do.",
+          "boardroom": "You identified a flaw in the brief and withheld it. If the client raises the omitted three in the meeting, the presenter learns of it at the same moment they do."
+        }
+      }
+    ],
+    "debrief": {
+      "verdict": {
+        "spicy": "The gap between B and A is not politeness or length. It's whether you transmitted the thinking you'd already done — you'd noticed the adjacent markets either way.",
+        "boardroom": "The distinction between B and A is not tone or length. It is whether the analysis you had already completed was transmitted; the market observation existed in both cases."
+      },
+      "principle": {
+        "spicy": "State your working, your assumption, its cost, and what you'll do by default. Four lines. It reads as authority and it's mostly just admin.",
+        "boardroom": "State your working, your assumption, its consequence, and your default action. Four lines, which read as authority and are largely procedural."
+      }
+    },
+    "tags": ["recognise", "questions", "phrasing"],
+    "reviewed_by": null
+  },
+  {
+    "id": "w00-r03",
+    "type": "sequence",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "INI": 0.4, "RSC": 0.4, "EXE": 0.2 },
+    "prompt": {
+      "spicy": "You've hit a method gap at 10am. Put these in the order you should actually do them — the whole thing should take under fifteen minutes.",
+      "boardroom": "You encounter a method gap at 10am. Place these in the order they should be carried out; the sequence should take under fifteen minutes."
+    },
+    "payload": {
+      "kind": "sequence",
+      "steps": [
+        {
+          "id": "q1",
+          "label": {
+            "spicy": "Search the exact error text or the exact phrase from the brief",
+            "boardroom": "Search the exact error text or the precise wording of the brief"
+          }
+        },
+        {
+          "id": "q2",
+          "label": {
+            "spicy": "Open the last version of this work someone else did and see how they handled it",
+            "boardroom": "Review the most recent comparable work and how it was handled"
+          }
+        },
+        {
+          "id": "q3",
+          "label": {
+            "spicy": "Write one sentence: what you're trying to do, and the exact point it breaks",
+            "boardroom": "Write one sentence stating the objective and the precise point of failure"
+          }
+        },
+        {
+          "id": "q4",
+          "label": {
+            "spicy": "Add what you've already ruled out, and what you'll do by default if nobody replies",
+            "boardroom": "Add the options already eliminated and the default action if there is no response"
+          }
+        },
+        {
+          "id": "q5",
+          "label": {
+            "spicy": "Send it to the one person most likely to know — not the channel, not your manager by reflex",
+            "boardroom": "Send it to the individual most likely to know, rather than a channel or your manager by default"
+          }
+        }
+      ],
+      "correct_order": ["q1", "q2", "q3", "q4", "q5"]
+    },
+    "debrief": {
+      "verdict": {
+        "spicy": "Search, copy, write the sentence, add the default, send it to one person. Step three ends it surprisingly often — writing \"it breaks when I…\" is where you find out you already knew.",
+        "boardroom": "Search, model, articulate, state a default, send to one person. The third step frequently resolves the issue: articulating the failure point often reveals the answer."
+      },
+      "principle": {
+        "spicy": "Ten minutes of looking, then ask with the looking attached. The attachment is what makes it a good question rather than a fast one.",
+        "boardroom": "Ten minutes of investigation, then ask and include what you found. The inclusion is what distinguishes a good question from a quick one."
+      }
+    },
+    "tags": ["recognise", "questions", "ten-minute-rule"],
+    "reviewed_by": null
+  },
+  {
+    "id": "w00-r04",
+    "type": "hot_takes",
+    "scored": true,
+    "difficulty": "core",
+    "competency_weights": { "COM": 0.4, "AWR": 0.3, "INI": 0.3 },
+    "prompt": {
+      "spicy": "Swipe. Fast. The considered answer lands after each one.",
+      "boardroom": "Respond quickly. The considered answer follows each statement."
+    },
+    "payload": {
+      "kind": "hot_takes",
+      "cards": [
+        {
+          "id": "q1",
+          "statement": {
+            "spicy": "You should batch your questions rather than sending them as they occur to you.",
+            "boardroom": "Questions should be consolidated rather than sent individually as they arise."
+          },
+          "agree_is_stronger": true,
+          "nuance": {
+            "spicy": "Three questions in one message costs someone one context switch. The same three across a morning costs three, and the research on interruption says the damage outlasts the interruption itself. The exception is anything that blocks you completely or gets more expensive by the hour — those go immediately.",
+            "boardroom": "Three questions in a single message require one context switch; the same three spread across a morning require three, and the disruption extends beyond the interruption itself. The exception is anything fully blocking or increasing in cost over time, which should be raised immediately."
+          }
+        },
+        {
+          "id": "q2",
+          "statement": {
+            "spicy": "If you preface a question with \"sorry, this is probably a stupid question\", you're being appropriately humble.",
+            "boardroom": "Prefacing a question with an apology demonstrates appropriate humility."
+          },
+          "agree_is_stronger": false,
+          "nuance": {
+            "spicy": "You're pre-loading their judgement for them. They hadn't decided it was stupid until you offered. Humility is showing your working and being genuinely open to being wrong — it isn't a disclaimer at the top of a message.",
+            "boardroom": "The framing supplies an assessment they had not yet formed. Humility is demonstrated by showing your reasoning and remaining open to correction, not by a disclaimer preceding the question."
+          }
+        },
+        {
+          "id": "q3",
+          "statement": {
+            "spicy": "Asking your manager the same thing twice is worse than getting it wrong.",
+            "boardroom": "Asking a manager the same question twice is worse than proceeding incorrectly."
+          },
+          "agree_is_stronger": false,
+          "nuance": {
+            "spicy": "Getting it wrong is nearly always worse, and this fear produces a lot of quietly incorrect work. The actual fix is upstream: write the answer down the first time. Repeat questions aren't a memory failure, they're a note-taking one.",
+            "boardroom": "Proceeding incorrectly is almost always more costly, and this concern produces a considerable amount of quietly inaccurate work. The remedy is to record the answer the first time; repeated questions reflect record-keeping rather than memory."
+          }
+        },
+        {
+          "id": "q4",
+          "statement": {
+            "spicy": "There's a point where you should say you don't understand the work well enough to be doing it.",
+            "boardroom": "There is a threshold at which you should state that you do not understand the work well enough to undertake it."
+          },
+          "agree_is_stronger": true,
+          "nuance": {
+            "spicy": "And the test is specific: can you say in one sentence what this is for and who is harmed if it's wrong? If not, more clarifying questions won't save it — that's a scope conversation and it's cheap on Monday and career-shaped on Thursday.",
+            "boardroom": "The test is specific: can you state in one sentence what the work is for and who is affected if it is incorrect? If not, further clarification will not resolve it. That is a scope conversation, and its cost rises sharply with delay."
+          }
+        },
+        {
+          "id": "q5",
+          "statement": {
+            "spicy": "Senior people ask fewer questions than junior people.",
+            "boardroom": "Senior colleagues ask fewer questions than junior ones."
+          },
+          "agree_is_stronger": false,
+          "nuance": {
+            "spicy": "Watch one for a week. They ask constantly — they just ask about goals, constraints and decisions rather than method, and they arrive with a position attached. Volume isn't the variable. Type is.",
+            "boardroom": "Observation suggests otherwise. Senior colleagues ask frequently, but about goals, constraints and decisions rather than method, and they arrive with a proposed position. The variable is type, not volume."
+          }
+        },
+        {
+          "id": "q6",
+          "statement": {
+            "spicy": "\"Any update on this?\" is a reasonable follow-up message.",
+            "boardroom": "\"Any update on this?\" is a reasonable follow-up."
+          },
+          "agree_is_stronger": false,
+          "nuance": {
+            "spicy": "It transfers the whole job of remembering to them. \"Still planning to send the pack at 3 — going with the standard discount unless I hear otherwise\" does the same chase, requires nothing from them, and moves the work whether they answer or not.",
+            "boardroom": "It transfers the burden of recollection entirely to them. A follow-up stating your intended action and default achieves the same prompt, requires no response, and allows the work to continue regardless."
+          }
+        }
+      ]
+    },
+    "debrief": {
+      "verdict": {
+        "spicy": "The thread: good asking is about type and structure, not volume or apology. Nobody has ever been marked down for a question that arrived with a position attached.",
+        "boardroom": "The common thread: effective asking is a matter of type and structure rather than frequency or tone. A question accompanied by a proposed position is rarely received poorly."
+      },
+      "principle": {
+        "spicy": "Batch it, drop the apology, bring a default, and know the line where a question becomes a scope conversation.",
+        "boardroom": "Consolidate, remove the apology, propose a default, and recognise the point at which a question becomes a scope conversation."
+      }
+    },
+    "tags": ["recognise", "hot-takes", "questions"],
+    "reviewed_by": null
+  }
+]

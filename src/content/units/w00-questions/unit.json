@@ -1,0 +1,116 @@
+{
+  "id": "w00-questions",
+  "side": "both",
+  "number": 1,
+  "title": {
+    "spicy": "Ask Like You've Read It",
+    "boardroom": "Ask Like You've Read It"
+  },
+  "subtitle": {
+    "spicy": "Questions: the ones that buy you credibility, and the ones that spend it.",
+    "boardroom": "Questions: which ones build standing, and which ones quietly cost it."
+  },
+  "primary_competencies": ["INI", "COM"],
+  "pathways": ["full", "emergency", "no-energy", "grad-intake", "first-90"],
+  "estimated_minutes": 38,
+  "idea": {
+    "heading": {
+      "spicy": "A question is a transcript of your thinking.",
+      "boardroom": "A question is a transcript of your thinking."
+    },
+    "blocks": [
+      {
+        "body": {
+          "spicy": "People tell you there's no such thing as a stupid question. There isn't. There are, however, questions that show you've read the brief and questions that show you haven't, and the person answering can tell within about four words which one they're holding.\n\nThat's the whole unit. Not \"ask more\". Not \"ask less\". Ask in a way that transmits what you already understand.",
+          "boardroom": "The conventional advice is that no question is a poor one. That is broadly true. It is also true that a question reveals how much of the material you have absorbed, and the recipient can generally tell within the first sentence.\n\nThis unit is therefore not about asking more or less. It is about asking in a way that conveys what you already understand."
+        }
+      },
+      {
+        "heading": {
+          "spicy": "Four gaps, and only two of them are anyone else's problem",
+          "boardroom": "Four gaps, of which two belong to someone else"
+        },
+        "body": {
+          "spicy": "Every stuck moment is one of four things, and they have completely different fixes:\n\n**Goal** — you don't know what \"done\" looks like. Usually theirs to answer, and cheap.\n**Method** — you don't know how to do it. Usually yours: it's findable, copyable, or learnable in under an hour.\n**Constraint** — you don't know the rule, the budget, the deadline or the format. Sometimes findable, sometimes only in someone's head.\n**Decision** — two defensible options and no authority to pick. Always theirs. Always escalate.\n\nMost people ask about method, which is the one they could have solved, and stay silent about the decision, which is the one they can't. That's the pattern to break.",
+          "boardroom": "Every blockage is one of four types, each with a different resolution:\n\n**Goal** — the definition of completion is unclear. Usually theirs to answer, and quick.\n**Method** — how to execute is unclear. Usually yours: findable, replicable, or learnable within the hour.\n**Constraint** — the rule, budget, deadline or format is unknown. Sometimes documented, sometimes held informally.\n**Decision** — two defensible options with no authority to choose between them. Always theirs, and always escalated.\n\nThe common error is asking about method, which was solvable independently, while remaining silent on the decision, which was not."
+        }
+      },
+      {
+        "heading": {
+          "spicy": "The shape of a question that lands",
+          "boardroom": "The structure of an effective question"
+        },
+        "body": {
+          "spicy": "Four parts, in this order, and it fits in a Slack message:\n\n1. **What you did.** \"I've pulled the Q3 figures and rebuilt the margin tab.\"\n2. **The assumption you made.** \"I've assumed it excludes the Renwick refund.\"\n3. **What it costs if you're wrong.** \"If it's included, the margin moves about 8% and the summary slide changes.\"\n4. **The default.** \"Unless I hear otherwise by 2pm I'll proceed on excluded.\"\n\nPart 4 is the one nobody does, and it's the one that turns a question into a decision they can make in six seconds. It also means their silence stops being your blocker.",
+          "boardroom": "Four components, in order, and it fits within a short message:\n\n1. **What you have done.** \"I have rebuilt the margin tab using the Q3 figures.\"\n2. **The assumption applied.** \"I have assumed this excludes the Renwick refund.\"\n3. **The consequence if incorrect.** \"If it is included, the margin shifts by roughly 8% and the summary changes.\"\n4. **The stated default.** \"Absent a response by 2pm I will proceed on the excluded basis.\"\n\nThe fourth component is routinely omitted and is the one that converts a query into a six-second decision. It also ensures that a non-response no longer blocks the work."
+        }
+      },
+      {
+        "heading": {
+          "spicy": "The bit nobody says out loud",
+          "boardroom": "The point rarely stated directly"
+        },
+        "body": {
+          "spicy": "There is a level of not-understanding below which you should not be doing the task at all. Not \"should ask more questions\". Should not be doing it.\n\nIf you couldn't explain, in one sentence, what this work is *for* and who is harmed if it's wrong, then no amount of clever questioning will save it. That's a scope conversation, not a clarification. It sounds like: \"I can do the build, but I don't understand the client's position well enough to be choosing the numbers — can you make that call or point me at whoever can?\"\n\nSaying that early is one of the most senior-sounding things a junior person can do. Saying it two days late is a different sentence entirely.",
+          "boardroom": "There is a threshold of understanding below which the work should not be attempted at all — not asked about more thoroughly, but not attempted.\n\nIf you cannot state in one sentence what the work is for and who is affected if it is wrong, better questions will not resolve it. That is a scope conversation, not a clarification. It sounds like: \"I can complete the build, but I do not understand the client's position well enough to be selecting the figures. Can you make that call or direct me to whoever can?\"\n\nRaised early, this reads as sound judgement. Raised after the deadline has passed, it reads very differently."
+        }
+      },
+      {
+        "heading": {
+          "spicy": "Ten minutes, then ask",
+          "boardroom": "Ten minutes, then ask"
+        },
+        "body": {
+          "spicy": "The honest rule for method gaps: ten minutes of genuine looking — the exact error text, the shared drive, the last person who did it — and then you ask, with what you found attached.\n\nNot two days. Ten minutes. The cost of asking too early is small and recoverable. The cost of asking on Thursday about a Monday problem is that everyone now knows the work didn't move for three days.",
+          "boardroom": "For method gaps the practical rule is ten minutes of genuine investigation — the exact error text, the shared documentation, the last person to complete similar work — and then ask, citing what you found.\n\nNot two days. The cost of asking slightly early is minor and recoverable. The cost of asking on Thursday about a Monday problem is that the absence of progress becomes visible to everyone."
+        }
+      }
+    ]
+  },
+  "science": {
+    "heading": {
+      "spicy": "The evidence, briefly, with actual names",
+      "boardroom": "The evidence, in brief"
+    },
+    "findings": [
+      {
+        "effect": "Advice-seeking increases perceived competence",
+        "body": {
+          "spicy": "Brooks, Gino and Schweitzer ran five experiments and found that asking someone for advice made them rate you as *more* competent, not less — the effect held even for difficult tasks. The mechanism is flattering: people like being consulted, and they attribute good judgement to whoever consulted them.",
+          "boardroom": "Brooks, Gino and Schweitzer found across five experiments that seeking advice increased perceptions of the asker's competence rather than reducing them, including on difficult tasks. The mechanism is straightforward: being consulted is well received, and the consultation itself is read as sound judgement."
+        },
+        "citation": "Brooks, Gino & Schweitzer (2015), Management Science"
+      },
+      {
+        "effect": "The illusion of explanatory depth",
+        "body": {
+          "spicy": "Rozenblit and Keil found people believe they understand things far better than they do — until they're asked to explain the mechanism step by step, at which point confidence collapses. This is why writing your question down often answers it, and why \"I understand it\" is not evidence that you do.",
+          "boardroom": "Rozenblit and Keil demonstrated that individuals substantially overestimate their understanding until required to explain the mechanism in detail, at which point confidence falls sharply. This explains why articulating a question frequently resolves it, and why a sense of understanding is weak evidence of it."
+        },
+        "citation": "Rozenblit & Keil (2002), Cognitive Science"
+      },
+      {
+        "effect": "Cost of interruption",
+        "body": {
+          "spicy": "Interrupted work takes measurably longer and produces more errors, and the recovery isn't instant — the interrupted person carries the disruption into the next task. This is the real cost of the drive-by question, and it's why batching three questions into one message is not a stylistic preference.",
+          "boardroom": "Interrupted work takes longer and produces more errors, with recovery extending beyond the interruption itself into subsequent tasks. This is the genuine cost of unplanned queries, and the reason for consolidating several questions into a single message."
+        },
+        "citation": "Mark, Gudith & Klocke (2008), CHI; Altmann & Trafton (2007), Hum. Factors"
+      },
+      {
+        "effect": "Psychological safety predicts asking",
+        "body": {
+          "spicy": "Edmondson found that teams differ enormously in whether people will admit uncertainty, and the difference is the team, not the person. Worth knowing for two reasons: if asking feels dangerous where you work, that may be accurate rather than paranoid — and when you're senior, the asking behaviour in your team is your output, not theirs.",
+          "boardroom": "Edmondson found that willingness to admit uncertainty varies far more between teams than between individuals. This matters in both directions: if raising uncertainty appears risky in your team, that perception may be accurate; and in a senior role, the asking behaviour of your team is a reflection of your leadership."
+        },
+        "citation": "Edmondson (1999), Admin. Sci. Quarterly"
+      }
+    ]
+  },
+  "close": {
+    "principle": {
+      "spicy": "Name the gap, do the ten minutes, then ask with your working and a default. If you can't say what the work is for, that's not a question — that's a scope conversation.",
+      "boardroom": "Identify the gap, complete ten minutes of investigation, then ask with your working and a stated default. If you cannot articulate the purpose of the work, that is a scope conversation rather than a clarification."
+    }
+  }
+}

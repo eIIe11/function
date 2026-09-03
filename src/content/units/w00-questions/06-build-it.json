@@ -1,0 +1,77 @@
+{
+  "id": "w00-commitment",
+  "type": "commitment",
+  "scored": false,
+  "difficulty": "intro",
+  "prompt": {
+    "spicy": "One behaviour, thirty days. A Cue and a Behaviour, not a goal — vague intent has a measured effect of roughly nothing, if–then plans don't.\n\nPick one of ours or write your own. Small enough that you'd still do it on a bad day.",
+    "boardroom": "One behaviour, thirty days. A Cue and a Behaviour rather than a goal: general intention has minimal measured effect, whereas if–then planning does not.\n\nSelect one of the suggestions or write your own, small enough to complete on a difficult day."
+  },
+  "payload": {
+    "kind": "commitment",
+    "suggestions": [
+      {
+        "cue": {
+          "spicy": "When I'm about to ask a question",
+          "boardroom": "When I am about to ask a question"
+        },
+        "behaviour": {
+          "spicy": "I add the assumption I'm working to and what I'll do by default if nobody replies",
+          "boardroom": "I state the assumption I am working to and the action I will take absent a response"
+        }
+      },
+      {
+        "cue": {
+          "spicy": "When I catch myself typing \"sorry, stupid question\"",
+          "boardroom": "When I begin a message with an apology"
+        },
+        "behaviour": {
+          "spicy": "I delete it and start with what I've already done instead",
+          "boardroom": "I remove it and open with the work already completed"
+        }
+      },
+      {
+        "cue": {
+          "spicy": "When I don't know how to do something",
+          "boardroom": "When the method is unclear to me"
+        },
+        "behaviour": {
+          "spicy": "I give it ten minutes of real looking, then ask with what I found attached",
+          "boardroom": "I spend ten minutes investigating, then ask and include what I found"
+        }
+      },
+      {
+        "cue": {
+          "spicy": "When a question occurs to me that isn't blocking anything",
+          "boardroom": "When a non-blocking question arises"
+        },
+        "behaviour": {
+          "spicy": "I park it in a list and send them together once a day",
+          "boardroom": "I record it and send the accumulated questions once daily"
+        }
+      },
+      {
+        "cue": {
+          "spicy": "When I can't say in one sentence what a piece of work is for",
+          "boardroom": "When I cannot state in one sentence what the work is for"
+        },
+        "behaviour": {
+          "spicy": "I say that out loud to someone that day, before I build anything on top of it",
+          "boardroom": "I raise it that day, before building further work on the assumption"
+        }
+      }
+    ]
+  },
+  "debrief": {
+    "verdict": {
+      "spicy": "In the tracker. Four check-ins over thirty days, then it ends — properly ends. No streak, nothing breaks if you miss a Tuesday.",
+      "boardroom": "Recorded in the tracker with four check-ins over thirty days, after which it concludes. There is no streak and missed days reset nothing."
+    },
+    "principle": {
+      "spicy": "Cue → Behaviour. The cue is the part everyone leaves out and the part that does the work.",
+      "boardroom": "Cue then Behaviour. The cue is the component most often omitted and the one that produces the effect."
+    }
+  },
+  "tags": ["commitment", "questions"],
+  "reviewed_by": null
+}

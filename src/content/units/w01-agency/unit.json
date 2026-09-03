@@ -1,7 +1,7 @@
 {
   "id": "w01-agency",
   "side": "both",
-  "number": 1,
+  "number": 2,
   "title": {
     "spicy": "Nobody Is Coming to Save You",
     "boardroom": "Nobody Is Coming to Save You"
@@ -61,8 +61,8 @@
           "boardroom": "What this unit is not saying"
         },
         "body": {
-          "spicy": "It isn't saying never ask. Asking well is a skill and we teach it in unit 05. It isn't saying suffer quietly, and it isn't saying every problem is yours — some genuinely aren't, and handing those back is also agency.\n\nIt's saying: the default has to be motion. Even small motion. Even motion in a slightly wrong direction, which is usually recoverable and always more informative than a still, silent afternoon.",
-          "boardroom": "This is not an argument against asking. Asking well is a distinct skill covered in unit 05. Nor is it an argument for absorbing everything: some problems genuinely belong elsewhere, and returning them appropriately is also agency.\n\nThe principle is that the default should be action. Small action is sufficient. Imperfectly directed action is usually recoverable and is always more informative than inaction."
+          "spicy": "It isn't saying never ask. Asking well is a skill and we teach it in unit 01, Ask Like You've Read It, which comes before this one. It isn't saying suffer quietly, and it isn't saying every problem is yours — some genuinely aren't, and handing those back is also agency.\n\nIt's saying: the default has to be motion. Even small motion. Even motion in a slightly wrong direction, which is usually recoverable and always more informative than a still, silent afternoon.",
+          "boardroom": "This is not an argument against asking. Asking well is a distinct skill covered in unit 01, Ask Like You've Read It, which precedes this one. Nor is it an argument for absorbing everything: some problems genuinely belong elsewhere, and returning them appropriately is also agency.\n\nThe principle is that the default should be action. Small action is sufficient. Imperfectly directed action is usually recoverable and is always more informative than inaction."
         }
       }
     ]
