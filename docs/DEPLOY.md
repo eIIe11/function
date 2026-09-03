@@ -16,17 +16,24 @@ already in `netlify.toml`, so accept the detected settings:
 | Functions directory | `netlify/functions` |
 | Node version | 20 |
 
-`npm run build` runs the content validator first, and `netlify.toml` sets
-`CONTENT_REQUIRE_REVIEW=true` for the build. **The first production build will
-fail** until the 39 intake and Unit 01 items have a `reviewed_by` — that is the
-intended behaviour, not a bug. To deploy before sign-off, either review the
-content or remove that variable from `[build.environment]` deliberately.
+The live site is [function11.netlify.app](https://function11.netlify.app/).
+
+`npm run build` runs the content validator first. `netlify.toml` currently sets
+`CONTENT_REQUIRE_REVIEW="false"`, so a build ships content that is still
+`reviewed_by: null` — deliberate while the site is a preview, and paired with an
+`X-Robots-Tag: noindex` header so unreviewed copy cannot reach a search index.
+**Flip both before selling to the public:** set it to `"true"` (the build then
+refuses unsigned-off content) and drop the noindex header. Malformed content,
+banned phrases, bad competency weights and unreachable scenario nodes fail the
+build either way.
 
 ## 2. Environment variables
 
 Site configuration → Environment variables. Nothing here belongs in the repo.
 
-Minimum for a working deploy without card payments:
+Nothing is required for the site to build and run: an unset `PAYMENT_PROVIDER`
+behaves as `invoice`, so checkout refuses honestly instead of crashing. Minimum
+for a *useful* deploy without card payments:
 
 ```
 PAYMENT_PROVIDER=invoice

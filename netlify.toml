@@ -5,8 +5,10 @@
 
 [build.environment]
   NODE_VERSION = "20"
-  # Production refuses to ship content nobody has signed off. See docs/OPEN-DECISIONS.md #9.
-  CONTENT_REQUIRE_REVIEW = "true"
+  # Set to "true" before selling to the public: the build then refuses any content
+  # still `reviewed_by: null`. "false" while the site is a preview, so an unsigned-off
+  # draft is testable rather than unbuildable. See docs/OPEN-DECISIONS.md #9.
+  CONTENT_REQUIRE_REVIEW = "false"
 
 [functions]
   node_bundler = "esbuild"
@@ -40,6 +42,8 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    # Pre-launch: unreviewed content must not reach a search index. Remove at launch.
+    X-Robots-Tag = "noindex, nofollow"
 
 [[headers]]
   for = "/fonts/*"
